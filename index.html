@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--Antes de empezar. Comentar es una forma de dejar
+comentarios sin afectar el codigo, 
+usan las etiquetas con las que este texto
+inicia y finaliza, es importante saberlo ya que usaremos
+estas etiquetas  para poder explicar nuestro codigo-->
+<!--Nota de  la etiqueta anterior: Recuerda que la etiqueta de arriba 
+le indica al navegador el tipo de documento que estamos
+programando que en este caso declaramos que esto es
+un html5-->
+<html>
+    <!--Recuerda que todo el codigo dentro de una pagina web
+    en html debe de ir dentro de la etiqueta anterior-->
+<head>
+    <title>
+        ¿Deseas tener tu propia pagina web?
+    </title>
+    <!--<base 
+     href="https://dgfi5lk3rpbwjyogvudjnq-on.drv.tw/Test Pagina web/www.coderdiegovidalgagan.com/evidenciahtmlcssjava.html"
+    target="_blank"> -->
+    <!--el codigo anterior fue desactivado ya que la hoja css no se leia por que no se ha subido al servidor web-->
+    <link href="estilos.css" rel="stylesheet" type="text/css"> 
+    <meta name="tu pagina web" 
+    content="Programacion de tu pagina web"
+
+    >
+    <script>
+
+    </script>
+    <style>
+
+    </style>
+    
+</head>
+<body>
+    <h1 class="title-color"> HTML/Responsive web design  Certifications</h1>
+<!--La etiqueta h1 habitual mente indica la cabecera mas
+importante de una pagina web-->
+<main>
+<!--REcordemos que la etiqueta main sirve para
+    definir el contenido principal de una web  o el contenido
+mas destacado. solo puede haber una etiqueta main-->
+
+<p class="paragraph"> Etiqueta p de Paragrahp que significa parrafo. 
+    este parrafo serra usado para pruebas de hipervinculos con 
+    la etiqueta "a" de anchor
+    <A href="#pruebaanchorinternallink">Este es un link 
+        interno de prueba.
+    </A>
+    <a href="#piedepagina">
+        Hipervincullo de prueba al pie de pagina
+    </a>
+
+</p>
+<!--LA etiquea p se usa para construir parrafos-->
+<ol class="sub-title">
+ <li> Lenguaje HTML </li>
+ <li> CSS</li>
+ <li>Java script </li>
+ <!--La etiqueta Li representa un articulo o
+elemento de la lista ordenada-->
+ </ol>
+<!--recordemos que la etiqueta ol representa una lista 
+    ordenada de articulos en contraste con los articulos
+no ordenados-->
+<p>
+    Para poder escribir hablar sobre las etiquetas de html
+    necesitamos redactarlas de alguna forma para que nuestro
+    editor de codigo no lo interprete como leguaje de codigop,
+    para eso sera necesario usar lago llamado Entidades de 
+    caracteres, "&lt;" "&gt;", Puedes encontrar informacion 
+    sobre esto en el siguiente link: 
+    http://www.noeliaespinosa.com/mostrar-codigo-html-sin-que-se-ejecute/
+Existen etiquetas descriptivas como &lt;main&gt;, &lt;header&gt; 
+&lt;footer&gt;&lt;nav&gt;&lt;video&gt; &lt;article&gt;
+&lt;section&gt; y  muchas otras.
+Estas etiquetas describen la estructura de tu documento html.
+a continuacion tenemos una imagen de ejemplo de mi:
+
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+texto aleatorio para rellenoa
+</p>
+<a href="#">
+<img class="medium-image" src="https://scontent.fmtt1-1.fna.fbcdn.net/v/t31.0-8/p720x720/22339579_1594856380552600_8674757941758962716_o.jpg?_nc_cat=110&_nc_sid=a4a2d7&_nc_ohc=wW3wfbtP0FYAX8dV0Ry&_nc_ht=scontent.fmtt1-1.fna&_nc_tp=6&oh=46d1a543568b8ac62a119254fe62e7c3&oe=5EC01043" 
+alt="Vemos una foto diego vidal como ejemplo" > 
+</a>
+<!--La etiqueta img se usa para introducir imagenes acompañada
+de "src="aqui va un link de una foto"" donde se introduce
+el link de la foto que queremos mostrar-->
+<a href="https://www.facebook.com/diego2587/">
+click aqui para ver mi facebook
+</a>
+<p id="pruebaanchorinternallink">
+    Etiqueta parrafo :Este es un parrafo de ejemplo usado para crear 
+    un hipervinculo hacia aqui.
+</p>
+<p>
+a continuacion podemos ver una lista no ordenada
+que usa los comandos  ul para abri y cerar lista
+y "li" para indicuar un articulo de la lista
+</p>
+<ul>
+    <li> Lista no ordenada 1</li>
+    <li>Lista no ordenada 2</li>
+    <li> lista no ordenada 3</li>
+</ul>
+<p>
+    A continuacion crearemos una fomrulario web
+</p>
+<form action="#">
+    <input type="text" placeholder="Marcador de ejempo" required>
+    <button type="submit">
+        Este boton envia la respuesta
+    </button>
+</form>
+<p>
+    A continuacion crearemos un conjunto de botones
+    de radio.
+</p>
+<form>
+    <input id="radiop1" type="radio" name="botonesradiospreubas" value="radio1" checked>
+    <label for="radiop1"> Radio prueba 1 </label>
+    <input id="radiop2" type="radio" name="botonesradiospreubas" value="radio2">
+    <label for="radiop2"> Radio prueba 2 </label>
+    <input id="radiop3" type="radio" name="botonesradiospreubas" value="radio3">
+    <label for="radiop3"> Radio prueba 3 </label>
+    <!--Los codigos anteriores que incluyen las labes 
+    con radios sirven para hacer opciones multiples
+donde solo se pueda selecionar una opcion, puesto que
+al selecionar otra la primera selecionada se 
+deseleciona-->
+</form>
+<div>   
+<p>
+    A continuacion haremos un ejemplo de checkboses
+    que son un tipo de entrada 2  
+</p>
+<form>
+
+    <input type="checkbox" id="checkbox1" name="botonescheckbox"checked>
+    <label for="checkbox1">checkbox1  </label>
+    <input type="checkbox" id="checkbox1" name="botonescheckbox">
+    <label for="checkbox2">checkbox2  </label>
+    <input type="checkbox" id="checkbox1" name="botonescheckbox">
+    <label for="checkbox3">checkbox3  </label>
+
+</form>
+</div>
+<!---la etiqueta anterior nos permite agregar
+un texto con hipervinculo auna
+pagina web. en este caso facebook-->
+<p>
+    Enlaces:
+    https://www.htmlquick.com/es/reference/tags/div.html
+</p>
+<footer id="piedepagina">
+  etiqueta footer o pie de pagina  Pie de pagina.
+</footer>
+</main>
+<!--Aqui cierra la tag main, nunca nunca deben ir dentro de
+las etiquetas header, footer, article, aside y nav, 
+es decir, las etiquetas anteriores pueden ir dentro de main
+pero la etiqueta main no debe ir dentro de las anteriores-->
+</body>
+</html>
+<!--LA etiqueta /html se usa  para cerrar todo el documento
+la mayoria de las etiquetas cierran con 
+"/ejemplo", esto significa que usamos la misma
+etiqueta de paertura pero le agregamos la diagonal/-->
+<!--
+    Para actualizar repositorio github
+
+-->
