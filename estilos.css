@@ -3,8 +3,12 @@
 }
 .title-color {
       color: gray;
+      background-color: rgb(48, 49, 51);
       font-size: 35px;  
       font-family: monospace;
+      text-align: center;
+      padding: 25px;
+      margin: 25px;
 }
 .title-border {
       border-color: sandybrown;
