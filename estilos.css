@@ -1,3 +1,6 @@
+.html-properties {
+      background-color: rgb(176, 186, 221);
+}
 .title-color {
       color: gray;
       font-size: 35px;  
@@ -31,4 +34,8 @@
 
 .background-color {
       background-color: slategrey;
+}
+#lista-numerada {
+      background-color: beige;
+
 }
