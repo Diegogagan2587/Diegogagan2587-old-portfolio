@@ -1,0 +1,20 @@
+.title-color {
+      color: gray;
+      font-size: 35px;  
+      font-family: monospace;
+}
+
+.sub-title {
+      color: slateblue;
+      font-size: 23px;
+      font-family: monospace;
+}
+
+.paragraph {
+      color: rgb(16, 21, 39);
+      font-size: 20px;
+}
+
+.medium-image {
+      width: 300px;
+}
