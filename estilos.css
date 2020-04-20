@@ -51,8 +51,9 @@ body {
 .background-color {
       background-color: slategrey;
 }
-#lista-numerada {
+#lista-numerada:hover {
       background-color: beige;
+      transform: scale(1.1);
 
 }
 
@@ -70,3 +71,16 @@ body {
       background-color: #7a57696b;
       padding: 5px;
     }
+      .cuadro-degradado {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+  }
+.hover:hover {
+  transform: scale(2.1)
+}
