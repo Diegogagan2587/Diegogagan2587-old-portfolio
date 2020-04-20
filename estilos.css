@@ -1,9 +1,15 @@
 .html-properties {
       background-color: rgb(176, 186, 221);
 }
-.title-color {
-      color: gray;
+.gray-bar {
       background-color: rgb(48, 49, 51);
+      color: rgb(29, 36, 63);
+      padding: 30px;
+      margin: -20px;
+}
+.title-color {
+      color: rgb(30, 53, 44);
+      background-color: rgba(29, 54, 77, 0.233);
       font-size: 35px;  
       font-family: monospace;
       text-align: center;
@@ -11,7 +17,7 @@
       margin: 25px;
 }
 .title-border {
-      border-color: sandybrown;
+      border-color: rgba(110, 108, 67, 0.788);
       border-style: solid;
       border-width: 10px;
 }
