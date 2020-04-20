@@ -1,11 +1,17 @@
 .html-properties {
-      background-color: rgb(176, 186, 221);
+      background-color: hsla(205, 24%, 80%, 0.219);
+}
+
+body {
+
+      color: rgb(48, 42, 22);
 }
 .gray-bar {
-      background-color: rgb(48, 49, 51);
-      color: rgb(29, 36, 63);
+      background-color: rgba(48, 49, 51, 0.664);
+      color: rgba(29, 36, 63, 0.178);
       padding: 30px;
       margin: -20px;
+      margin-bottom: 20px;
 }
 .title-color {
       color: rgb(30, 53, 44);
@@ -49,3 +55,18 @@
       background-color: beige;
 
 }
+
+.orange {
+      background-color: #755f4977;
+      padding: 5px;
+    }
+  
+.cyan {
+      background-color: #4a797967;
+      padding: 5px;
+    }
+  
+.raspberry {
+      background-color: #7a57696b;
+      padding: 5px;
+    }
