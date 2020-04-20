@@ -71,7 +71,7 @@ body {
       background-color: #7a57696b;
       padding: 5px;
     }
-      .cuadro-degradado {
+      #cuadro-colores {
     width: 70%;
     height: 100px;
     margin:  50px auto;
@@ -80,6 +80,10 @@ body {
       #ccfffc,
       #ffcccf
     );
+   
+  }
+  #cuadro-colores:hover {
+      transform: scale(1.1);
   }
 #foto-diego:hover {
   transform: scale(1.1)
