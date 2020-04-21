@@ -10,8 +10,9 @@ body {
       background-color: rgba(48, 49, 51, 0.664);
       color: rgb(212, 218, 240);
       position: fixed;
-      margin-top: -7%;
+      margin-top: -90px;
       inline-size: 99%;
+      padding-top: auto;
 }
 
 ul.datos-contacto li {
