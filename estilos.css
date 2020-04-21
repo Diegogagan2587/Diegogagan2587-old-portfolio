@@ -13,6 +13,7 @@ body {
       margin-top: -90px;
       inline-size: 99%;
       padding-top: auto;
+      padding-left: 10px;
 }
 
 ul.datos-contacto li {
@@ -147,9 +148,14 @@ ul.datos-contacto li {
     }
   
   @keyframes rainbow {
-  0%{background-color: blue;}
-  50% {background-color: green;}
-  100% {background-color: yellow;}
+  0%{background-color: blue;
+      top: 0px;}
+  50% {background-color: green;
+      top: 50px;
+}
+  100% {background-color: yellow;
+      top: 0px;
+}
   }
   
   
