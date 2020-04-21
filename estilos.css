@@ -8,11 +8,17 @@ body {
 }
 .gray-bar {
       background-color: rgba(48, 49, 51, 0.664);
-      color: rgba(29, 36, 63, 0.178);
-      padding: 30px;
-      margin: -20px;
-      margin-bottom: 20px;
+      color: rgb(212, 218, 240);
+      position: fixed;
+      margin-top: -7%;
+      inline-size: 99%;
 }
+
+ul.datos-contacto li {
+      display: inline;
+     
+}
+
 .title-color {
       color: rgb(30, 53, 44);
       background-color: rgba(29, 54, 77, 0.233);
@@ -60,6 +66,7 @@ body {
 .orange {
       background-color: #755f4977;
       padding: 5px;
+      margin-top: 100px;
     }
   
 .cyan {
