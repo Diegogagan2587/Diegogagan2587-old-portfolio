@@ -175,6 +175,7 @@ ul.datos-contacto li {
       animation-name: fade;
       animation-duration: 3s;
       animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
     }
   
     @keyframes fade {
@@ -184,5 +185,33 @@ ul.datos-contacto li {
   
       }
     }
+    #ball2 {
+      width: 100px;
+      height: 100px;
+      margin: auto 50px;
+      position: relative;
+      border-radius: 50%;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
   
+    @keyframes bounce{
+      0% {
+        top: 0px;
+      }
+      50% {
+        top: 249px;
+        width: 130px;
+        height: 70px;
+      }
+      100% {
+        top: 0px;
+      }
+    }
   
