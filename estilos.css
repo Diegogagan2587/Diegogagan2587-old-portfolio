@@ -134,8 +134,8 @@ body {
   
     #rect:hover {
   animation-name: rainbow;
-  animation-duration: 4s;
-  
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
     }
   
   @keyframes rainbow {
