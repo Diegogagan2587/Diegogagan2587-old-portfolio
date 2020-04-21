@@ -98,12 +98,14 @@ ul.datos-contacto li {
   transform: scale(1.1)
 }
 .heart {
-      position: absolute;
-      margin: left;
+      position: fixed;
+      margin: auto;
       top: 150px;
       right: 0;
       bottom: 0;
+      bottom: 78%;
       left: 1100px;
+      left:85%;
       background-color: pink;
       height: 50px;
       width: 50px;
