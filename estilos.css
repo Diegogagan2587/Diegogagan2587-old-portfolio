@@ -15,6 +15,7 @@ body {
       inline-size: 99%;
       padding-top: 2px;
       padding-left: 2px;
+      font-size: 100%;
 }
 .main-nav-bar {
   background-color: rgba(48, 49, 51, 0.664);
@@ -25,6 +26,7 @@ body {
   inline-size: 99%;
   padding-top: 10px;
   padding-left: 10px;
+  font-size: 100%;
 }
 
 ul.main-list-nav li {
