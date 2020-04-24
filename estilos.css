@@ -10,10 +10,24 @@ body {
       background-color: rgba(48, 49, 51, 0.664);
       color: rgb(212, 218, 240);
       position: fixed;
-      margin-top: -90px;
+      margin-top: 499px;
+      margin-bottom: -30px;
       inline-size: 99%;
-      padding-top: auto;
-      padding-left: 10px;
+      padding-top: 2px;
+      padding-left: 2px;
+}
+.main-nav-bar {
+  background-color: rgba(48, 49, 51, 0.664);
+  color: rgb(212, 218, 240);
+  position: fixed;
+  margin-top: -90px;
+  inline-size: 99%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+ul.main-list-nav li {
+  display: inline;
 }
 
 ul.datos-contacto li {
