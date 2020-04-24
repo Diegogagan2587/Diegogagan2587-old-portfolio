@@ -10,8 +10,7 @@ body {
       background-color: rgba(48, 49, 51, 0.664);
       color: rgb(212, 218, 240);
       position: fixed;
-      margin-top: 499px;
-      margin-bottom: -30px;
+      top: 91%;
       inline-size: 99%;
       padding-top: 2px;
       padding-left: 2px;
@@ -20,7 +19,7 @@ body {
   background-color: rgba(48, 49, 51, 0.664);
   color: rgb(212, 218, 240);
   position: fixed;
-  margin-top: -90px;
+  bottom: 90%;
   inline-size: 99%;
   padding-top: 10px;
   padding-left: 10px;
@@ -205,7 +204,7 @@ ul.datos-contacto li {
       width: 100px;
       height: 100px;
       margin: auto 50px;
-      position: relative;
+      position: static;
       border-radius: 50%;
       background: linear-gradient(
         35deg,
