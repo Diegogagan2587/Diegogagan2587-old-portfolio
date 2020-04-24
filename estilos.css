@@ -11,6 +11,7 @@ body {
       color: rgb(212, 218, 240);
       position: fixed;
       top: 92%;
+      bottom: 5px;
       inline-size: 99%;
       padding-top: 2px;
       padding-left: 2px;
@@ -20,6 +21,7 @@ body {
   color: rgb(212, 218, 240);
   position: fixed;
   bottom: 90%;
+  top: 5px;
   inline-size: 99%;
   padding-top: 10px;
   padding-left: 10px;
