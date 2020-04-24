@@ -218,6 +218,7 @@ ul.datos-contacto li {
       animation-name: bounce;
       animation-duration: 1s;
       animation-iteration-count: infinite;
+      top: 150%;
     }
   
     @keyframes bounce{
