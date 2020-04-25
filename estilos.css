@@ -31,7 +31,7 @@ body {
   font-size: 100%;
 }
 
-@media (min-height: 2340px ) {
+@media (min-height: 2240px ) {
   .gray-bar {
     font-size: 32px;
   }
