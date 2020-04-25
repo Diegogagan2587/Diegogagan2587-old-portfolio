@@ -17,6 +17,8 @@ body {
       padding-left: 2px;
       font-size: 100%;
 }
+
+
 .main-nav-bar {
   background-color: rgba(48, 49, 51, 0.664);
   color: rgb(212, 218, 240);
@@ -27,6 +29,15 @@ body {
   padding-top: 10px;
   padding-left: 10px;
   font-size: 100%;
+}
+
+@media (min-height: 2340px ) {
+  .gray-bar {
+    font-size: 32px;
+  }
+  .main-nav-bar {
+    font-size: 32px;
+  }
 }
 
 ul.main-list-nav li {
