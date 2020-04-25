@@ -33,10 +33,10 @@ body {
 
 @media (min-height: 2240px ) {
   .gray-bar {
-    font-size: 32px;
+    font-size: 235%;
   }
   .main-nav-bar {
-    font-size: 32px;
+    font-size: 235%x;
   }
 }
 
