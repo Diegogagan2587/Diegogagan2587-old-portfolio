@@ -38,6 +38,7 @@ body {
   .main-nav-bar {
     font-size: 235%;
     bottom: 96%;
+    top: -1%;
   }
 }
 
