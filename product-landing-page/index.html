@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="english">
     <head>
-       <link href="reset.css"
+       <link href="../reset.css"
        rel="stylesheet"
        type="text/css">
         <link 
@@ -26,14 +26,22 @@
                     <li><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
-            <h1>Handcrafted, home-made masterpieces</h1>
         </header>
-        
-        <form id="email-form">
+
+        <div class="container"></div>
+
+    <section id="hero">
+         <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input type="email"
         id="email-input" 
-        placeholder="Enter your email address">
+        name="email"
+        placeholder="Enter your email address"
+        required>
+        <input id="submit" type="submit" value="get started" class="btn">
     </form>
+    </section>
+
     <h2>Premium Materias</h2>
     <p>Our trombones use the shiniest brass which is 
         sourced locally. This will increase the longevity
