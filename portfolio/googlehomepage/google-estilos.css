@@ -1,0 +1,54 @@
+#top-nav-bar {
+    
+    
+}
+
+#ul-top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 25%;
+    margin: 3px 3px auto auto;
+
+}
+
+#form-search {
+    display: flexbox;
+    position: relative;
+    justify-items: center;
+    margin: 5% auto 5% auto;
+}
+
+#logo-google {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto auto 5px auto;
+}
+#search-box {
+    display: flex;
+    position: nowrap;
+    inline-size: 40%;
+    margin: auto auto 5px auto;
+    height: 1.35rem;
+}
+
+#botones > button {
+  display: inline-block;
+  flex-flow: row;
+  inline-size: 13%;
+  margin: 5px 3rem auto 3rem;
+}
+#mexico {
+    display: inline-block;
+    margin-top: 10%;
+}
+
+#bottom-left-corner{
+   display: inline;
+    margin-top: 10px;
+}
+
+}
+footer {
+    height: 5em;
+}
