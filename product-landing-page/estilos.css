@@ -129,6 +129,49 @@ nav > ul {
 
 #hero {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+   
+}
+
+h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+#hero > h2 {
+
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: sandybrown;
+}
+
+#hero input[type="submit"]:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+    #hero {
+        margin-top: 120px;
+    }
 }
 
 #features {
