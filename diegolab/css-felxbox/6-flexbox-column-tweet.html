@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="6-flexbox-column-tweet.css" rel="stylesheet" type="text/css">
+        <title>
+            CSS Flexbox: Aplica la propiedad "flex-direction"
+            para crear una columna en un tweet incrustado.
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>
+            CSS Flexbox: Aplica la propiedad "flex-direction"
+            para crear una columna en un tweet incrustado.
+            </h1>
+        </header>
+        <p>
+            El <strong>header</strong>(encabezado) y el
+            <strong>footer</strong>(pie de pagina) de el tweet
+            incrustado uso la propiedad 
+            <strong>flex-direction</strong> antes con un valor
+            <strong>row</strong>. Similarmente, los articulos/items 
+            dentro del elemento
+            <strong>.profile-name</strong> trabajaran bien apilados
+            como una columna.
+            <hr>
+        </p>
+        <p>
+            Agrega la propiedad CSS
+            <strong>flex-direction</strong> a el encabezado(header) del 
+            elemento <strong>.profile-name</strong>
+            y ajusta el valor a 
+            <strong>column</strong>.
+            <hr>
+        </p>
+        <div id="header2">
+            <img
+            src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+            alt="Quincy Larson's profile picture"
+            class="profile-thumbnail"
+            >
+            <div class="profile-name">
+                <h3>Quincy Larson</h3>
+                <h4>@ossia</h4>
+            </div>
+            <div class="follow-btn">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div id="inner">
+            <p>
+                I meet so many people who are in search of that
+                one trick  that will help them  work smart.
+                even if you work smart, you still haave to work
+                hard.
+            </p>
+            <span class="date">
+                1:32 PM - 12 Jan 2018
+            </span>
+            <hr>
+        </div>
+        <footer>
+            <div class="stats">
+                <div class="retweets"><strong>107</strong>Retweets</div>
+                <div class="likes"><strong>431</strong>Likes</div>
+            </div>
+            <div class="cta">
+                <button class="share-btn">Share</button>
+                <button class="retweet-btn">Retweet</button>
+                <button class="like-btn">Like</button>
+            </div>
+        </footer>
+
+    </body>
+</html>
