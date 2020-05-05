@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="7-flexbox-justify-content.css" 
+        rel="stylesheet"
+        type="text/css">
+        <title>
+            CSS Flexbox: Alinea elementos usando la 
+            propiedad "justify-content"
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Flexbox: Alinea elementos usando la 
+                propiedad "justify-content"
+            </h1>
+        </header>
+        <p>
+            Algunas veces los articulos flex dentro de 
+            un contenedor flex no rellenan todo el espacio
+            en el contenedor. Es comun querer decirle a
+            CSS como alinear y espaciar los articulos flex
+            en cierta forma. Afortunadamente. la Propiedad
+            <strong>justify-content</strong> tiene varias
+            opciones para hacer esto.
+            Pero primero, hay terminologia algo importante
+            para entender antes de revisar esas opciones.
+        </p>
+        <a 
+            href="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg" 
+            target="_blank">
+                aqui hay una imagen util mostranto una fila
+                para ilustrat los conceptos de abajo
+            </a>
+        <p>
+            Recuerda que configurar un contenedor flex 
+            como una  fila ubica los articulos flex lado a 
+            lado de la izquierda a la derecha. Un contenedor
+             flex
+            ajustado como columna coloca los articulos/items 
+            apilados
+            en vertical de la parte superior hacia el fondo.
+            Para cada una, la direcion de los articulos 
+            flex en la que estan acomodados es llamado
+            <strong>main axis</strong>(eje principal).
+            Para una fila, Esta es una linea horizontal que 
+            corta
+            atravez de cada articulo/item. 
+            Para una columna . el eje principal es una linea
+            vertical atravez de los articulos.
+        </p>
+        <p>
+            Hay varias opciones para como espaciar los articulos
+            flex a lo largo de la linea que es el eje principal.
+            Una de las mas comunmente usadas es 
+            <strong>justify-content: center;</strong>
+            La cual alinea todos los articulos flex a el centro 
+            dentro
+            del contenedor flex. otras opciones incluyen:
+        </p>
+    <ul>
+        <li>
+            <strong>flex-start</strong>: Alinea articulos a el
+            inicio de el contenedor flex. Para una fila, esto 
+            empuja los articulos a la izquierda de el contenedor.
+            Para una columna, esto empuja los articulos a la 
+            cima de el contenedor.Esta es la alineacion predeterminada
+            si no esta especificada una opcion para 
+            <strong>justify-content</strong>.
+        </li>
+        <li>
+            <strong>flex-end</strong>: Alinea articulos a el
+            final de el contenedor flex. Para una fila,
+            eso empuja los articulos a la derecha de el
+            contenedor. Para una columna, esto empuja los 
+            articulos a el fondo del contenedor.
+        </li>
+        <li>
+            <strong>space-between</strong>: Alinea articulos
+            a el centro de el eje principal, con espacio extra
+            ubicado entre los articulos. El primero y el ultimo
+            articulo estan muy empujados a el borde de el
+            contenedor flex. Por ejemplo, en una fila el primer
+            articulo esta contra el lado izquierdo de el contenedor
+            , el ultimo articulo esta contra el lado derecho de el
+            contenedor, luego el espacio restante es distribuido 
+            incluso alrededor de los otros articulos.
+        </li>
+        <li>
+            <strong>space-around</strong>: Similar a 
+            <strong>space-between</strong> pero el primer 
+            y ultimo articulo no estan fijos a los bordes de el
+            contenedor, el espacio es distribuido alrededor de
+            todos los articulos con medio espacio en cada
+            extremo de el contenedor flex.
+        </li>
+        <li>
+            <strong>space-evenly</strong>: Distribuye espacio 
+            igual entre los articulos flex con un espacio lleno
+            en cada extremo de el contenedor flex.
+        </li>
+    </ul>
+    <hr>
+    <p>
+        Un ejemplo ayuda a mostrar esta propiedad en accion.
+        Agrega la propiedad css<strong>justify-content
+        </strong> a el elemento
+        <strong>#box-container</strong>(es el contenedor flex),
+         y dale un valor de
+        <strong>center</strong>(centro)
+    </p>
+    <hr>
+    <div id="box-container">
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+    </div>
+    </body>
+</html>
