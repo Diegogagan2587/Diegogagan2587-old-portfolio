@@ -1,35 +1,20 @@
-/*Css Basic and generic tags*/
-
-
-/*Asi se hacen comentarios en Css*/
 .html-properties {
       background-color: hsla(205, 24%, 80%, 0.219);
 }
-
 body {
-
   color: rgb(48, 42, 22);
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   margin: 1.45rem 8% 0 8%;
 }
 
-
-.contact-bar {
-      background-color: rgba(48, 49, 51, 0.664);
-      color: rgb(212, 218, 240);
-      position: fixed;
-      top: 92%;
-      bottom: 5px;
-      inline-size: 99%;
-      padding-top: 2px;
-      padding-left: 2px;
-      font-size: 100%;
-}
-
-
 .main-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: rgba(48, 49, 51, 0.664);
   color: rgb(212, 218, 240);
   position: fixed;
@@ -41,6 +26,32 @@ body {
   font-size: 100%;
 }
 
+ul.main-list-nav li {
+  display: inline;
+  height: 3px;
+  
+}
+
+.contact-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      background-color: rgba(48, 49, 51, 0.664);
+      color: rgb(212, 218, 240);
+      position: fixed;
+      top: 92%;
+      bottom: 5px;
+      inline-size: 99%;
+      padding-top: 2px;
+      padding-left: 2px;
+      font-size: 100%;
+}
+
+ul.datos-contacto li {
+  display: inline;
+ 
+}
+
 @media (min-height: 2240px ) {
   .gray-bar {
     font-size: 235%;
@@ -50,15 +61,6 @@ body {
     bottom: 96%;
     top: -1%;
   }
-}
-
-ul.main-list-nav li {
-  display: inline;
-}
-
-ul.datos-contacto li {
-      display: inline;
-     
 }
 
 .title-color {
