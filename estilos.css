@@ -2,6 +2,8 @@
       background-color: hsla(205, 24%, 80%, 0.219);
 }
 body {
+  display: flex;
+  flex-direction: column;
   color: rgb(48, 42, 22);
 }
 
