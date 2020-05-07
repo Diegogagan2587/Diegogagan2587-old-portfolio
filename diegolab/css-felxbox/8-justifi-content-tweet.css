@@ -1,0 +1,67 @@
+html {
+    background-color: rgba(71, 61, 139, 0.178);
+    
+}
+body {
+    font-family: Arial, sans-serif;
+}
+#header2, footer {
+    display: flex;
+    flex-direction: row;
+}
+#header2 .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+#header2 .profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+#header2 .profile-name > h3, h4 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#header2 .follow-btn {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+#header2 .follow-btn button {
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#header h3, header h4 {
+    display: flex;
+    margin: 0;
+}
+
+#inner p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#inner hr {
+    margin: 20px 0;
+    font-size: 200px;    
+}
+footer .stats {
+    display: flex;
+    font-size: 15px;
+    margin-right: auto;
+}
+footer .stats strong {
+    font-size: 18px;
+}
+footer .stats .likes {
+    margin-left: 10px;
+}
+footer .cta button {
+    border: 0;
+    background: transparent;
+}
+
+
