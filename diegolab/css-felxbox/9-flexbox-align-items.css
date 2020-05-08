@@ -1,0 +1,42 @@
+html {
+    background-color: rgba(47, 79, 79, 0.438);
+}
+
+.all-box-container {
+    background: gray;
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+}
+
+.box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+}
+.box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 24px;
+}
+#box-container2 {
+    background: gray;
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+}
+#box-container3 {
+    align-items: center;
+}
+#box-container4 {
+    align-items: stretch;
+}
+#box-container5 {
+    align-items: baseline;
+
+}
+span {
+    display: flex;
+    flex-direction: column;
+}
+

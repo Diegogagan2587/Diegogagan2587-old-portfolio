@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="9-flexbox-align-items.css"
+        type="text/css">
+        <title>
+            CSS Flexbox: Alinea Elementos Usanto la 
+            Propiedad "align-items"
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>
+            CSS Flexbox: Alinea Elementos Usanto la 
+            Propiedad "align-items"
+            </h1>
+        </header>
+        <h2>
+            ¿Que es "align-items"?
+        </h2>
+        <p>
+            La Propiedad
+            <strong>align-items</strong> es similar
+            a <strong>justify-content</strong>.
+            Recuerda que la propiedad 
+            <strong>justify-content</strong>
+            alineo articulos flex a lo largo de el eje
+            principal(main axis). Para las filas, el eje principal
+            (<strong>main axis</strong>)
+             es una
+            linea horizontal, y para las columnas es una linea
+            vertical.
+        </p>
+        <p>
+            Contenedores Flex ademas tienen un eje transversal
+            (<strong>cross axis</strong>) el
+            el cual es el opuesto al eje principal
+            (<strong>main axis</strong>). Para las 
+            filas(rows)
+            el eje transversal(cross axis) es vertical, y para las columnas el eje
+            transversal es horizontal.
+        </p>
+        <p>
+            CSS ofrece la Propiedad
+            <strong>align-items</strong> para alinear articulos 
+            a lo largo de el eje transversal
+            <strong>cross axis</strong>. Para una fila (row), esta
+            dice a CSS como empujar los articulos en toda la fila
+            arriba o abajo dentro de el contenedor. Y para una columna,
+            como empujar todos los items a la izquierda o derecha dentro 
+            de el contenedor.
+        </p>
+        <p>
+            Los diferentes valores disponibles para 
+            <strong>align-items</strong> incluyen
+        </p>
+        <ul>
+            <li>
+                <strong>flex-start</strong>: Alinea articulos a el inicio
+                de el contenedor flex. Para filas, esto alinea articulos
+                a la cima de el contenedor. Para las columnas, esto alinea
+                articulos a la izquierda de el contenedor.
+            </li>
+            <li>
+                <strong>flex-end</strong>: Alinea articulos a le fin de el
+                contenedor flex. para las filas, esto alinea articulos a el
+                fondo de el contenedor. Para las columnas, esto alinea
+                articulos a la derecha de el contenedor.
+            </li>
+            <li>
+                <strong>center</strong>: Alinea articulos a el centro. para
+                filas, esto alinea articulos vertical mente (espacio igual arriba
+                y debajo de el articulo). Para columnas, Esto las alinea 
+                horizontalmente (igual espacio a la izquierda y derecha de los
+                articulos).
+            </li>
+            <li>
+                <strong>stretch</strong>: Estira los articulos para rellenar el
+                contenedor flex. Por ejemplo, filas de articulos son estiradas 
+                para rellenar el contenedor flex de arriba hacia abajo. Este es 
+                el valor predeterminado  si no hay un valor especificado para
+                <strong>align-items</strong>.
+            </li>
+            <li>
+                <strong>baseline</strong>: Alinea elementos a sus lineas base.
+                La linea base es un concepto de texto, piensa de el como la linea
+                que sostienen a las letras o donde las letras se sientan.
+            </li>
+            <hr>
+        </ul>
+        <p>
+            Un ejemplo ayudara a mostrar esta propiedad en accion.
+            Agrega la propiedad CSS 
+            <strong>align-items</strong> a el elemento
+            <strong>#box-container</strong>, y dale un valor de 
+            <strong>center</strong>.
+        </p>
+
+        <p>
+            <strong>Bonus</strong>
+            Prueba las otras opciones para la propiedad
+            <strong>align-items</strong> en el editor de codigo para
+            ver sus difetencias. pero nota que "center" es la unica
+            que pasa pasara este 
+            <a 
+            href="https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/align-elements-using-the-align-items-property" 
+            target="_blank">desafio</a>
+            <hr>
+        </p>
+            <h2>
+                A continuacion veamos figuras de ejemplo:
+            </h2>
+            <h3>
+                align-items: flex-start;
+            </h3>
+            <p>
+                <span>.box-container {</span>
+                    <span>background: gray;</span>
+                    <span>display: flex;</span>
+                    <span>height: 200px;</span>
+                    align-items: flex-start;
+                    <span>}</span>
+            </p>
+        <div id="box-container1" class="all-box-container">
+            <div class="box-1">Hello</div>
+            <div class="box-2">Goodbye</div>
+        </div>
+        <h3>align-items: flex-end;</h3>
+        <p>
+            <span>.box-container {</span>
+                <span>background: gray;</span>
+                <span>display: flex;</span>
+                <span>height: 200px;</span>
+                align-items: flex-end;
+                <span>}</span>
+        </p>
+        <div class="all-box-container" id="box-container2">
+            <div class="box-1">Hello</div>
+            <div class="box-2">Goodbye</div>
+        </div>
+        <h3>align-items: center;</h3>
+        <p>
+            <span>.box-container {</span>
+                <span>background: gray;</span>
+                <span>display: flex;</span>
+                <span>height: 200px;</span>
+                align-items: center;
+                <span>}</span>
+        </p>        
+        <div id="box-container3" class="all-box-container">
+            <div class="box-1">Hello</div>
+            <div class="box-2">Goodbye</div>
+        </div>
+        <h3>align-items: stretch;</h3>
+        <p>
+            <span>.box-container {</span>
+                <span>background: gray;</span>
+                <span>display: flex;</span>
+                <span>height: 200px;</span>
+                align-items: stretch;
+                <span>}</span>
+        </p>        
+        <div id="box-container4" class="all-box-container">
+            <div class="box-1">Hello</div>
+            <div class="box-2">Goodbye</div>
+        </div>
+        <h3>align-items: baseline;</h3>
+        <p>
+            <span>.box-container {</span>
+                <span>background: gray;</span>
+                <span>display: flex;</span>
+                <span>height: 200px;</span>
+                align-items: baseline;
+                <span>}</span>
+        </p>        
+        <div id="box-container5" class="all-box-container">
+            <div class="box-1">Hello</div>
+            <div class="box-2">Goodbye</div>
+        </div>
+    </body>
+</html>
