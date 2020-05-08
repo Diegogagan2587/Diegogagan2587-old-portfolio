@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Flexbox: Usa la Propiedad flex-wrap para envolver
+        una fila o columna
+    </title>
+    <link rel="stylesheet" 
+    href="11-flexbox-flex-wrap.css" 
+    type="text/css">
+</head>
+<body>
+    <header>
+        <h1>
+            CSS Flexbox: Usa la Propiedad flex-wrap para envolver
+            una fila o columna            
+        </h1>
+    </header>
+    <p>
+        CSS flexbox tiene una caracteristica para dividir
+        un articulo flex en <strong>multiples filas (o columnas).</strong>
+        Por defecto un contenedor flex ajustara todos los
+        articulos flex juntos.
+        Por ejemplo, una fila estara toda en una linea.
+    </p>
+    <p>
+        Sin embargo, Usar la Propiedad
+        <strong>flex-wrap</strong> le dice a CSS que envuelva
+        articulos.
+        Esto significa articulos extra moviendose dentro de
+        una nueva fila o columna. El punto de quiebre
+        de donde sucede la envoltura depende de el tamaño
+        de el articulo y el tamaño de el contenedor.
+    </p>
+    <p>
+        CSS ademas tiene una opcion para la direccion
+        de la envoltura:
+    </p>
+    <ul>
+        <li>
+            <strong>nowrap</strong>: Esta es
+            la configuracion por defecto, y no envuelve
+            articulos.
+        </li>
+        <li>
+            <strong>wrap</strong>: Envuelve articulos
+            de la izquierda a la derecha si ellos estan en
+            una fila, o de arriba hacia abajo si ellos estan
+            en una columna.
+        </li>
+        <li>
+            <strong>wrap-reverse</strong>: Envuelve articulos
+            de la derecha a la izquierda si ellos estan en una
+            fila, o del abajo hacia arriba si ellos
+            estan en una columna.
+        </li>
+    </ul>
+    <hr>
+    <p>
+        El diseño actual tiene tantas cajas para una fila.
+        Añade la Propiedad CSS 
+        <strong>flex-wrap</strong> a el elemento
+        <strong>#box-container</strong>, y dale un valor de
+        <strong>wrap</strong>
+    </p>
+    <hr>
+    <h2>
+        Ejemplos de la propiedad flex-wrap 
+    </h2>
+    <p>
+        <strong>Nota</strong>
+        Para lograr los siguientes contenedores necesitamos
+        la etiqueta
+        <strong>div</strong> que repesente el contenedor
+        y otras mas para representar las pequeñas cajas de 
+        colores, dicho esto se puede entender el codigo
+        CSS de la clase de el contenedor(div)
+    </p>
+    <h3>
+        flex-wrap: nowrap;
+    </h3>
+    <p>
+        <span>#box-container {</span>
+        <span>background: gray;</span>
+        <span>display: flex;</span>
+        <span>height: 250px;</span>
+        <span>flex-wrap: nowrap;</span>
+        }
+    </p>
+    <div id="box-container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+        <div class="box-6">6</div>
+    </div>
+    <h3>
+        flex-wrap: wrap;
+    </h3>
+    <p>
+        <span>#box-container {</span>
+        <span>background: gray;</span>
+        <span>display: flex;</span>
+        <span>height: 250px;</span>
+        <span>flex-wrap: wrap;</span>
+        }
+    </p>    
+    <div id="box-container2">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+        <div class="box-6">6</div>
+    </div>
+    <h3>
+        flex-wrap: wrap;
+    </h3>
+    <p>
+        <span>#box-container {</span>
+        <span>background: gray;</span>
+        <span>display: flex;</span>
+        <span>height: 250px;</span>
+        <span>flex-wrap: wrap;</span>
+        }
+    </p>    
+    <div id="box-container3">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+        <div class="box-6">6</div>
+    </div>       
+
+</body>
+</html>
