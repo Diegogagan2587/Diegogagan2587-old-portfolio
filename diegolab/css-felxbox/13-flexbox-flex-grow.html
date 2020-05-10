@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Flexbox: Usa la propiedad "flex-grow"
+        para expandir articulos
+    </title>
+    <link rel="stylesheet" href="13-flexbox-flex-grow.css">
+</head>
+<body>
+    <div class="main-page-container">
+    <header>
+        <h1>
+        CSS Flexbox: Usa la propiedad "flex-grow"
+        para expandir articulos        
+    </h1>
+    </header>
+    <p>
+        Lo opuesto a 
+        <strong>flex-shrink</strong> es la propiedad
+        <strong>flex-grow</strong>. Recuerda que 
+        <strong>flex-shrink</strong>  controla el tamaño de 
+        los articulos cuanto el contenedor se encoge.
+        La propiedad
+        <strong>flex-grow</strong> controla el tamaño de los articulos cuando
+        el contenedor padre se expande.
+    </p>
+    <p>
+        Usando un ejemplo similar de el ultimo desafio, si un articulo
+        tiene un valor <strong>flex-grow</strong> de 1
+        y el otro tiene un valor <strong>flex-grow</strong> de 3
+        , el que tiene el valor de 3 crecera tres veces como mucho
+        a comparacion de el otro.
+        <hr>
+    </p>
+    <p>
+        Agrega la propiedad CSS 
+        <strong>flex-grow</strong> tanto a 
+        <strong>#box-1</strong> como a 
+        <strong>#box-2</strong>.
+        Dale un valor de 1 a <strong>#box-1</strong> y un valor
+        de 2 a <strong>#box-2</strong>.
+        <hr>
+    </p>
+    <h2>
+        Ejemplos
+    </h2>
+    <h3>
+        Contenedor y arituclos sin aplicar la 
+        propiedad "flex-grow"
+    </h3>
+    <p>
+        A continuacion podemos ver la figura inicial
+        sin la propiedad "flex-shrink"
+    </p>
+    <div class="box-container">
+    <div class="box-1"><strong>box-1</strong></div>
+    <div class="box-2"><strong>box-2</strong></div>
+    </div>
+    <h3>
+        Contenedor con articulos usando la propiedad "
+        flex-grow"
+    </h3>
+    <p>
+        En esta segundo figura hemos agregado la propiedad
+        "flex-shrink" de modo que box-1 solo
+        crecio una vez su tamaño mientras que box-2
+        aumento 2 veces el tamaño de box-1.
+    </p>
+    <p>
+        <span><strong>.box-container {</strong></span>
+           <span> display: flex;</span>
+           <span> height: 250px;</span>
+           <span> background-color: gray;</span>
+        <strong> }</strong>
+        <span><strong> .grow-box-1 {</strong></span>
+           <span> background-color: dodgerblue;</span>
+           <span> height: 100px;</span>
+           <span> flex-grow: 1; </span>
+        <strong> }</strong>
+        <span><strong> .grow-box-2 {</strong></span>
+           <span> background-color: orangered;</span>
+           <span> height: 100px;</span>
+           <span> flex-grow: 2;</span>
+        <strong> }</strong>
+        
+    </p>
+    <div class="box-container">
+        <div class="grow-box-1"><strong>box-1</strong></div>
+        <div class="grow-box-2"><strong>box-2</strong></div>
+        </div>    
+        
+
+
+
+
+</div>
+</body>
+</html>
