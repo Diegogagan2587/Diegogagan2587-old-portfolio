@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox: Usa la propiedad flex-shrink para encoger
+        articullos.
+    </title>
+    <link rel="stylesheet" href="12-flex-shrink.css" type="text/css">
+</head>
+<body>
+    <div class="main-page-container">
+    <header>
+        <h1>
+            CSS Flexbox: Usa la propiedad flex-shrink
+            para encoger articulos.
+        </h1>
+    </header>
+    <p>
+        Hasta aqui, todas las propiedades en los desafios
+        aplican a los contenedores flex (Los "padres" de los
+        articulos flex). Sin embargo, hay varias propiedades
+        utiles para los articulos flex.
+    </p>
+    <p>
+        La primera propiedad es 
+        <strong>flex-shrink</strong>. Cuando se usa, permite a 
+        un articulo encogerse si el contenedor flex es muy pequeño.
+        Los articulos se encogen cuando el ancho de el contenedor 
+        padre es mas pequeño que los anchos combinados de todos 
+        los articulos flex dentro de el. 
+    </p>
+    <p>
+        La propiedad
+        <strong>flex-shrink</strong> toma numeros como valores.
+        El numero mas alto, ese sera el mas encogido comparado 
+        a los otros articulos en el contenedor. Por ejemplo,
+        si un articulo tiene el valor
+        <strong>flex-shrink</strong> de <strong>1</strong>
+        y los otros tienen valores 
+        <strong>flex-shrink</strong> de <strong>3</strong>
+        El que tiene el valor de 3 sera encogido 3 veces como mucho
+        en comparacion con los otros.
+    </p>
+    <hr>
+    <p>
+        Agrega la Propiedad CSS
+        <strong>flex-shrink</strong> tanto a
+        <strong>#box-1</strong> como a <strong>#box-2</strong>.
+        Dale a <strong>#box-1</strong> un valor de 
+        <strong>1</strong> y a <strong>#box-2</strong>
+        un valor de 
+        <strong>2</strong>.
+    </p>
+    <hr>
+    <h2>
+        "flex-shrink" en accion
+    </h2>
+    <h3>
+        Sin aplicar "flex-shrink"
+    </h3>
+    <p>
+        A continacion mostramos un ejemplo sin flex-shrink, 
+        con sus propiedades:
+        <span><strong>.box-container {</strong></span>
+        <span>display: flex;</span>
+        <span>height: 300px;</span>
+        <span>background-color: gray;</span>
+        <strong>}</strong>
+        <span><strong>#box-1 {</strong></span>
+        <span>dodgerblue;</span> 
+        <span>width: 100%;</span>
+        <span>height: 200px;</span>
+        <strong>}</strong> 
+        <span><strong>#box-2 {</strong></span>
+        <span>background-color: orange;</span>
+        <span> width: 100%;</span>
+        <span> height: 200px;</span>
+        <strong>}</strong>
+    </p>
+    <div class="box-container">
+        <div class="box-1"><strong>#box-1</strong></div>
+        <div class="box-2"><strong>#box-2</strong></div>
+
+    </div>
+    <p>
+        A continacion mostramos un ejemplo con
+         flex-shrink aplicado y
+        con sus propiedades:
+        <span><strong>.box-container {</strong></span>
+        <span>display: flex;</span>
+        <span>height: 300px;</span>
+        <span>background-color: gray;</span>
+        <strong>}</strong>
+        <span><strong>#box-1 {</strong></span>
+        <span>dodgerblue;</span> 
+        <span>width: 100%;</span>
+        <span>height: 200px;</span>
+        <span><strong>flex-shrink: 1;</strong></span>
+        <strong>}</strong> 
+        <span><strong>#box-2 {</strong></span>
+        <span>background-color: orange;</span>
+        <span> width: 100%;</span>
+        <span> height: 200px;</span>
+        <span><strong>flex-shrink: 2;</strong></span>
+        <strong>}</strong>
+    </p>    
+    <div class="box-container">
+        <div class="shrink-box-1"><strong>#box-1</strong></div>
+        <div class="shrink-box-2"><strong>#box-2</strong></div>
+    </div>
+</div>
+</body>
+</html>
