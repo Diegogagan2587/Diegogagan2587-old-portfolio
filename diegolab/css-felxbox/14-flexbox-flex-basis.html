@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Flexbox: Usa la propiedad "flex-basis"
+        para ajustar el tamaño inicial de un
+        articulo.        
+    </title>
+    <link rel="stylesheet" href="14-flexbox-flex-basis.css">
+</head>
+<body>
+    <div class="main-page-container">
+    <header>
+        <h1>
+        CSS Flexbox: Usa la propiedad "flex-basis"
+        para ajustar el tamaño inicial de un
+        articulo.        
+    </h1>
+    </header>
+    <p>
+        La propiedad
+        <strong>flex-basis</strong> especifica el tamaño inicial
+        de el articulo antes de que CSS haja ajustes con
+        <strong>flex-shrink</strong> o <strong>flex-grow</strong>.
+    </p>
+    <p>
+        Las unidades usadas por la propiedad 
+        <strong>flex-basis</strong> son la mismas que en otras
+        propiedades de tamaño (
+        <strong>px</strong>,<strong>em</strong>,<strong>%</strong>
+        ,etc.). El valor <strong>auto</strong> dimensiona articulos
+        basados en el contenido.
+        <hr>
+    </p>
+    <p>
+        Ajusta el tamaño inicial de las cajas usando la propiedad
+        <strong>flex-basis</strong>. Agrega la propiedad CSS 
+        <strong>flex-basis</strong> tanto a <strong>#box-1</strong>
+        como a<strong>#box-2</strong>. Dale a <strong>#box-1</strong>
+        un valor de <strong>10em</strong> y a <strong>#box-2</strong> 
+        un valor de <strong>20em</strong>.
+    </p>
+    <hr>
+    <h2>
+        Ejemplos "flex-basis" aplicados.
+    </h2>
+    <h3>
+        Contenedor sin "flex-basis" en sus articulos.
+    </h3>
+    <p>
+        A continuacion podemos ver un contenedor con articulos flex
+        y como se comportan sin la propiedad flex-basis. 
+        Lo cual significa que <strong>no cuentan con un valor de medida o 
+        tamaño inicial</strong>, si no que mas bien ocupan el tamaño
+        que su contenido.        
+    </p>
+    <div class="box-container">
+        <div class="box-1">box-1</div>
+        <div class="box-2">box-2</div>
+    </div>
+    <h3>
+        Aplicando "flex-basis" en los articulos del
+        contenedor.
+    </h3>
+    <p>
+        A continuacion podemos observar como se comportan los articulos
+        de un contenedor con la propiedad "flex-basis" aplicada.
+        Para este caso los articulos flex ya no miden lo mismo
+        que su contenido si mas bien tienen una medida inicial
+        especificada con la propiedad <strong>flex-basis</strong>.
+        <span><strong>.box-container {</strong></span>
+           <span> display: flex;</span>
+           <span> height: 250px;</span>
+           <span> background-color: gray;</span>
+        <span><strong> }</strong></span>
+        <span><strong>.basis-box-1 {</strong></span>
+           <span> background-color: dodgerblue;</span>
+           <span> height: 100px;</span>
+           <span> flex-basis: 10em;</span>
+       <span><strong> }</strong></span>
+       <span><strong> .basis-box-2 {</strong></span>
+           <span> background-color: orangered;</span>
+           <span> height: 100px;</span>
+           <span> flex-basis: 20em;</span>
+       <span><strong> }</strong></span>
+    </p>
+    <div class="box-container">
+        <div class="basis-box-1">box-1</div>
+        <div class="basis-box-2">box-2</div>
+    </div>
+
+</div>
+</body>
+</html>
