@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>
+        CSS Flexbox: Usa la propiedad flex shorthand
+    </title>
+    <link rel="stylesheet" href="15-flexbox-flex-shorthand.css">
+</head>
+<body>
+    <div class="main-page-container">
+    <header>
+        <h1>
+        CSS Flexbox: Usa la propiedad flex shorthand
+        </h1>
+    </header>
+    <p>
+        Hay un atajo disponible para ajustar varias 
+        propiedades flex de una sola vez. Las propiedades
+        <strong>flex-grow</strong>, <strong>flex-shrink</strong>,
+         y <strong>flex-basis</strong> pueden ser ajustadas 
+         todas juntas por medio de la propiedad
+         <strong>flex</strong>.
+    </p>
+    <p>
+        Por ejemplo, <strong>flex: 1 0 10px;</strong> ajustara el
+        articulo a <strong>flex-grow: 1;</strong>,
+        <strong>flex-shrink: 0;</strong> y 
+        <strong>flex-basis: 10px;</strong>.
+    </p>
+    <p>
+        Los ajustes por defecto de la propiedad son
+        <strong>flex: 0 1 auto;</strong>.
+    </p>
+    <hr>
+    <p>
+        Añadela propiedad CSS <strong>flex</strong>
+        tanto a <strong>#box-1</strong> como a 
+        <strong>#box-2</strong>. Dale a 
+        <strong>#box-1</strong> los valores como si tuviera
+        un <strong>flex-grow</strong> de 2, 
+        <strong>flex-shrink</strong> de 2,  y su 
+        <strong>flex-basis</strong> de 150px. 
+        dale a <strong>#box-2</strong> el valor de 
+        su <strong>flex-grow</strong> de 1, su 
+        <strong>flex-shrink</strong> de 1,
+        y su <strong>flex-basis</strong> de 150px.
+    </p>
+    <p>
+        Los valores causaran que <strong>#box-1</strong>
+        cresca hasta llenar el espacio extra hasat dos veces la
+        tasa de <strong>#box-2</strong> cuando el contenedor
+        es mas grande que 300px y se encogera dos veces la tasa
+        de <strong>#box-2</strong> cuando el contenedor este
+        en menos de 300px. 300px es el tamaño combinado de los
+        valores <strong>flex-basis</strong> de las dos cajas
+        (boxes.).
+    </p>
+    <hr>
+    <h2>
+        Ejemplos de la propiedad aplicada a contenedores.
+    </h2>
+    <h3>
+        Ejemplo sin la propiedad flex shorthand
+    </h3>
+    <p>
+        Lo primero que haresmos sera crear el contenedor
+        y agregar los items que para este caso seran box-1 y box-2
+        . En este ejemplo veremos como se comportan si usar
+        la propiedad <strong>flex</strong>.
+    </p>
+    <div class="box-container">
+        <div class="box-1">box-1</div>
+        <div class="box-2">box-2</div>
+    </div>
+    <h3>
+        Ejemplo usando la propiedad flex.
+    </h3>
+    <p>
+        En este ejemplo agregamos al ejempo atenrior la propiedad
+        flex y veremos como se comporta.
+       <span><strong> .box-container {</strong></span>
+           <span> display: flex;</span>
+           <span> height: 250px;</span>
+           <span> background-color: gray;</span>
+       <span><strong> }</strong></span>
+       <span><strong> .flex-box-1 { </strong></span>
+           <span> background-color: dodgerblue;</span>
+           <span> flex: 2 2 150px;</span>
+           <span> height: 100px;</span>
+        }
+       <span><strong> .flex-box-2 { </strong></span>
+           <span> background-color: orangered;</span>
+           <span><strong> flex: 1 1 150px;</strong></span>
+           <span> height: 100px;</span>
+       <span><strong> }</strong></span>
+    </p>
+    <div class="box-container">
+        <div class="flex-box-1">box-1</div>
+        <div class="flex-box-2">box-2</div>
+    </div>
+
+    </div>
+</body>
+</html>
