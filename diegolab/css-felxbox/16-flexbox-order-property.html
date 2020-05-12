@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS flexbox: Usa la propiedad "order" para 
+        reorganizar articulos
+    </title>
+    <link rel="stylesheet" href="16-flexbox-order-property.css">
+</head>
+<body>
+    <div class="main-page-container">
+    <header>
+        <h1>
+            CSS flexbox: Usa la propiedad "order" para 
+            reorganizar articulos
+        </h1>
+    </header>
+    <p>
+        La propiedad <strong>order</strong> es usada
+        para decirle a CSS el orden de como aparecen los 
+        articulos flex en el contenedor flex. Por defecto
+        , los articulos apareceran en el mismo orden 
+        que viene en la fuente HTML.
+        La propiedad toma numeros como valores, y
+        los numeros negativos pueden ser usados. 
+    </p>
+    <hr>
+    <p>
+        Añade la propiedad CSS 
+        <strong>order</strong> a ambos articulos
+        <strong>#box-1</strong> y 
+        <strong>#box-2</strong>. Dale a
+        <strong>#box-1</strong> un valor de 2 y Dale
+        a <strong>#box-2</strong> un valor de 1.
+    </p>
+    <hr>
+    <h2>
+        Ejemplos de uso de "order"
+    </h2>
+    <h3>
+        Ejemplo sin "order"
+    </h3>
+    <p>A continuacion vemos el ejemplo de
+        un contenedor con el orden del de la fuente html.
+    </p>
+    <div class="box-container">
+        <div class="box-1">box-1</div>
+        <div class="box-2">box-2</div>
+    </div>
+    <h3>
+        Ejemplo aplicado de la propiedad "order"
+    </h3>
+    <p>
+        A continuacion veremos como los bloques del primer
+        ejemplo aparecen reordenados en este ejemplo
+        a causa de la propiedad "order".
+       <span><strong> .box-container {</strong></span>
+           <span> display: flex;</span>
+           <span> height: 250px;</span>
+           <span> background-color: gray;</span>
+       <span><strong> }</strong></span>
+       <span><strong> .box-1 {</strong></span>
+           <span> background-color: dodgerblue;</span>
+           <span><strong> order: 2;</strong></span>
+           <span> height: 100px;</span>
+           <span> width: 100px;</span>
+       <span><strong> }</strong></span>
+       <span><strong> .box-2 {</strong></span>
+           <span> background-color: orangered;</span>
+           <span><strong> order: 1;</strong></span>
+           <span> height: 100px;</span>
+           <span> width: 100px;</span>
+       <span><strong> }</strong></span>
+    </p>
+    <div class="box-container">
+        <div class="order-box-1">box-1</div>
+        <div class="order-box-2">box-2</div>
+    </div>    
+
+
+
+</div>
+</body>
+</html>
