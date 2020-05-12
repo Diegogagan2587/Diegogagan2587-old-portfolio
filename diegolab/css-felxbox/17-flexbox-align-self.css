@@ -1,0 +1,41 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+    background-color: lavender;
+    max-width: 800px;
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+}
+.box-container {
+    background-color: gray;
+    display: flex;
+    height: 250px;
+}
+.box-1 {
+    background-color: dodgerblue;
+    height: 100px;
+    width: 100px;
+}
+.box-2 {
+    background-color: orangered;
+    height: 100px;
+    width: 100px;
+}
+.aligned-box-1 {
+    background-color: dodgerblue;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+.aligned-box-2 {
+    background-color: orangered;
+    height: 100px;
+    width: 100px;
+    align-self: flex-end;
+}
+span {
+    display: flex;
+    flex-direction: column;
+}

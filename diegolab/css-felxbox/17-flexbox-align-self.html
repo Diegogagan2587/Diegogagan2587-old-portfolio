@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox: Usa la propiedad "align-self"</title>
+    <link rel="stylesheet" href="17-flexbox-align-self.css">
+</head>
+<body>
+    <div class="main-page-container">
+    <header>
+        <h1>
+            CSS Flexbox: Usa la propiedad "align-self"
+        </h1>
+    </header>
+    <p>
+        La propiedad final para los articulos flex es
+        <strong>align-self</strong>. Esta propiedad te permite
+        ajustar individualmente la alineacion de cada articulo,
+        , en lugar de ajustarlas todas en una sola vez. Esto es
+        util desde que otras tecnicas de ajustes comunes 
+        usan las propiedades CSS 
+        <strong>float</strong>, <strong>clear</strong>, y
+        <strong>vertical-align</strong> no funcionan en articulos 
+        flex.
+    </p>
+    <p>
+        <strong>align-self</strong> acepta los mismos valores como
+        si fuera <strong>align-items</strong> y sobreescribira 
+        cualquier valor ajustado por la propiedad
+         <strong>align-items</strong>.
+    </p>
+    <hr>
+    <p>
+        Agrega la propiedad CSS
+        <strong>align-self</strong> tanto a 
+        <strong>#box-1</strong> como a <strong>#box-2</strong>.
+        Dale a <strong>#box-1</strong> un valor de
+        <strong>center</strong> y dale a <strong>#box-2</strong>
+        un valor de <strong>flex-end</strong>.
+    </p>
+    <hr>
+    <h2>Ejemplos a continuacion "align-self"</h2>
+    <h3>
+        Contenedor original
+    </h3>
+    <p>
+        Podemos ver el contenedor original y su alineacion
+        <strong>sin la propiedad "align-self"</strong>. 
+        Recordemos que si no ajustamos la direccion flex 
+        su direccion por defecnto es en row, y su alineacion 
+        por defecto sobre el main axis es al principio
+        al igual que su alineacion sobre el cross axis es al
+        principio, Dando como resultado que box-1 y box-2
+        esten juntos en la parte superior izquierda del contenedor
+        flex.
+    </p>
+    <div class="box-container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+    </div>
+    <h3>
+        Contenedor con "align-self" aplicado
+    </h3>
+    <p>
+        Recordemos que <strong>align-self</strong> es una 
+        propiedad similar a <strong>align-items</strong>.
+        Estas propiedades <strong>trabajan</strong> la alineacion
+        de los articulos sobre <strong>el eje transversal</strong>
+        (<strong>cross axis</strong>). Para una fila el eje 
+        transversal es vertical y para una columna es horizontal.
+        Si no se especifica una fila o columna el contenedor
+        flex alinea sus elementos en una fila. por tanto 
+        <strong>para este
+        ejemplo el eje transversal es horizontal</strong> asi que el
+        inicio del eje transversal es arriba y el final del eje 
+        transversal es al fondo del contenedor flex.
+    </p>
+    <p>
+       <span><strong> .box-container {</strong></span>
+           <span> background-color: gray;</span>
+           <span> display: flex;</span>
+           <span> height: 250px;</span>
+       <span><strong> }</strong></span>
+       <span><strong> .box-1 {</strong></span>
+           <span> background-color: dodgerblue;</span>
+           <span> height: 100px;</span>
+           <span> width: 100px;</span>
+           <span><strong> align-self: center;</strong></span>
+       <span><strong> }</strong></span>
+       <span><strong> .box-2 {</strong></span>
+           <span> background-color: orangered;</span>
+           <span> height: 100px;</span>
+           <span> width: 100px;</span>
+           <span> align-self: flex-end;</span>
+       <span><strong> }</strong></span>
+
+    </p>
+    <div class="box-container">
+        <div class="aligned-box-1">box-1</div>
+        <div class="aligned-box-2">box-2</div>
+    </div>    
+
+
+
+</div>
+</body>
+</html>
