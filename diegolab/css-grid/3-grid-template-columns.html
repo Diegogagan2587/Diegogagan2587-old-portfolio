@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Agrega Columnas con
+        "grid-template-columns</title>
+    <link rel="stylesheet" href="3-grid-template-columns.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            Agrega Columnas con
+            "grid-template-columns
+        </h1>
+    </header>
+    <p>
+        La simple creacion de un elemento grid no te llevara
+        muy lejos. Necesitas definir la estructura de la 
+        cuadricula tambien. Para gregar algunas columnas a la
+        cuadricula, usa la propiedad 
+        <strong>template-columns</strong> en un contenedor grid
+        a como lo demostramos abajo.        
+    </p>
+    <p>
+
+        <span><strong>.container {</strong></span>
+           <span> display: grid;</span>
+           <span><strong> grid-template-columns: 50px 50px;</strong></span>
+         <span><strong> }</strong></span>
+    </p>
+    <p>
+        Esto le dara a tu cuadricula dos columnas que son
+        cada una de 50px de ancho. El numero de parametros 
+        dados a la propiedad 
+        <strong>grid-template-columns</strong> indica el
+        numero de culumnas en la cuadricula, y los valores 
+        para cada parametro indican el ancho de cada columna.
+    </p>
+    <hr>
+    <p>
+        Dale al contenedor grid tres columnas que son
+        de 100px de ancho cada una.
+    </p>
+    <hr>
+    <h2>
+        Vista Pevia
+    </h2>
+    <h3>
+        Contenedor original
+    </h3>
+    <p>Aqui vemos el contenedor original</p>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+    <h3>aplicando grid-template-columns</h3>
+    <p>
+        A continuacion vemos como podemos formar tres columnas 
+        apartid de la propiedad grid. 
+        <strong>grid-template-columns</strong>, nota que
+        el contenedor numero 4 ya no entrabaa en una 4 
+        columna por que solo se especificaron 3 asi que se movio
+        a la columna del elemento 1 en la parte de abajo
+        Se puede ver en el codigo acontinuacion:
+       <span><strong> .container2 {</strong></span>
+           <span>display: grid;</span>
+           <span><strong>grid-template-columns: 100px 100px 100px;</strong></span>
+           <span>font-size: 40px;</span>
+           <span>width: 100%;</span>
+           <span>background: lightgray;</span>
+       <span><strong> }</strong></span>
+      <span> .d1{background:LightSkyBlue;}</span>
+      <span> .d2{background:LightSalmon;}</span>
+      <span> .d3{background:PaleTurquoise;}</span>
+      <span> .d4{background:LightPink;}</span>
+      <span> .d5{background:PaleGreen;}</span>
+    </p>
+
+    <div class="container2">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>    
+
+
+    
+</div>
+    
+</body>
+</html>

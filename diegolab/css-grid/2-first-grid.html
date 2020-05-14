@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu primera cuadricula CSS</title>
+    <link rel="stylesheet" href="2-first-grid.css">
+</head>
+<body>
+  <div class="main-page-container">
+      <header>
+          <h1>
+            CSS Grid: Crea tu primera cuadricula CSS
+          </h1>
+      </header>
+      <p>
+          Cambia cualquier elemeto HTML en un contenedor de 
+          cuadricula si configuramos su propiedad
+          <strong>display</strong> a <strong>grid</strong>.
+          Esto te da la habilidad para usar todas las demas
+          propiedades asociadas con CSS grid.
+      </p>
+      <p>
+          <strong>Nota:</strong>En CSS grid(cuadricula), El 
+          elememto padre se refiere a el como el contenedor
+          y sus hijos o decendientes son llamados Articulos(items.)
+      </p>
+      <hr>
+        <p>
+           Cambia el display de la etiqueta div con la clase 
+           <strong>container</strong>  a grid.
+        </p>
+        <hr>
+        <h2>
+            Vista previa
+        </h2>
+        <h3>
+            Contenedor original
+        </h3>
+        <p>
+            A continuacion observamos el comportamiento de el
+            contenedor y sus 6 objetos sin ajustar
+            la pripiedad display a grid.
+        </p>
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <h3>
+            Contenedor grid
+        </h3>
+        <p>
+            Este contenedor tiene ajustado "display: grid;"
+            Notamos que no tiene nigun cambio con el contenedor 
+            original, esto se debe a que aun no hemos hecho uso
+            de las propiedades que se nos abren al ajustar el 
+            display de un contenedor a grid.
+           <span><strong> .container2 {</strong></span>
+               <span><strong> display: grid;</strong></span>
+               <span> font-size: 40px;</span>
+               <span> width: 100%;</span>
+               <span> background-color: lightgray;</span>
+           <span><strong> }</strong></span>
+           <span> .d1 {background: lightskyblue;}</span>
+           <span> .d2 {background: lightsalmon;}</span>
+           <span> .d3 { background: paleturquoise;}</span>
+           <span> .d4 {background: lightpink;}</span>
+           <span> .d5 {background: palegreen;}</span>
+        </p>
+        <div class="container2">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+  </div>
+</body>
+</html>

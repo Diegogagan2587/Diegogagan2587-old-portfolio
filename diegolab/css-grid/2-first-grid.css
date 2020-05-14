@@ -1,0 +1,30 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+    background-color: lavender;
+    max-width: 800px;
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+}
+.container {
+    font-size: 40px;
+    width: 100%;
+    background-color: lightgray;
+}
+.container2 {
+    display: grid;
+    font-size: 40px;
+    width: 100%;
+    background-color: lightgray;
+}
+.d1 {background: lightskyblue;}
+.d2 {background: lightsalmon;}
+.d3 { background: paleturquoise;}
+.d4 {background: lightpink;}
+.d5 {background: palegreen;}
+span {
+    display: flex;
+    flex-direction: column;
+}
