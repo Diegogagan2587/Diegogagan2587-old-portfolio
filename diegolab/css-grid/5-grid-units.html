@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Usa unidades CSS Grid para cambiar
+        el tamaño de columnas y filas
+    </title>
+    <link rel="stylesheet" href="5-grid-units.css">
+</head>
+<body>
+<div class="main-page-container">
+    <h1>CSS Grid: Usa unidades CSS Grid para cambiar
+        el tamaño de columnas y filas
+    </h1>
+    <p>
+        Puedes usar unidades absolutas y relativas como
+        <strong>px</strong> y <strong>em</strong>
+        en CSS Grid para definir el tamaño de las filas y 
+        columnas.
+        Tu puedes usar estas tan bien:
+        <ul>
+            <li>
+                <strong>fr</strong>: ajusta la fila o columna 
+                a una fracion del espacio disponible.
+            </li>
+            <li>
+                <strong>auto</strong>: ajusta la fila o collumna
+                al ancho o alto de su contenido auotmaticamente.
+            </li>
+            <li>
+                <strong>%</strong>: ajusta la fila o columna 
+                a un porcentaje del ancho de su contenedor.
+            </li>
+        </ul>
+        Aqui esta el cogigo que genera la salida en la vista previa
+        de el <a href="#container1">contenedor 1</a>:
+       <span>
+           <strong class="example"> grid-template-columns: auto 50px 10% 2fr 1fr;
+           </strong></span>
+    </p>
+    <p>
+        Este retazo crea cinco columnas. La primera columna 
+        es tan ancho como su contendido, la segunda columna es de
+        50px, la tercera columna de el 10% de lo que mide su 
+        contenedor,y para las ultimas dos columnas; el espacio 
+        restante es dividido en tres secciones, dos estan
+        localizadas en la cuarta columna, y una en la quinta.
+    </p>
+    <hr>
+    <p>
+        Has una cuadricula con tres columnas cuyos
+        anchos son los siguientes: 1fr, 100px, y 2fr.
+    </p>
+    <hr>
+    <h2>
+        Vista previa
+    </h2>
+    <h3 id="container1">
+        Contenedor 1
+    </h3>
+    <p>a qui vemos como se comporta el contenedor
+        y sus elementos aplicando la propiedada que tenemos
+        de ejemplo de arriva
+        el texto de arriba. 
+        Como podemos observar tenemos 
+        <strong>5 elementos</strong> por lo tanto
+        como tenemos definidos 5 columnas nuestros elementos 
+       <strong> se acomodan en esas 5 columnas</strong>.
+         es por eso que no se
+        visualizan las dos filas de 50px sino mas
+        bien 
+       <strong> solo se ve una fila de 50px.</strong>
+        Por motivos practicos no mostramos el codigo
+        que define los colores de los articulos,
+        solo el codigo que define las filas y columnas en la 
+        cuadricula, estas porpiedades estan 
+        resaltadas en negro.
+    </p>
+    <p>
+       <span><strong> .container {</strong></span>
+           <span> font-size: 40px;</span>
+           <span> width: 100%;</span>
+           <span> background: lightgray;</span>
+           <span><strong> display: grid;</strong></span>
+           <span><strong> grid-template-columns: auto 50px 10% 2fr 1fr;</strong></span>
+           <span><strong> grid-row: 50px 50px;</strong></span>
+       <span><strong> }</strong></span>
+    </p>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+    <h3>
+        Unidades grid aplicadas
+    </h3>
+    <p>
+        A continuacion vemos como se comporta
+        la cuadricula con las diferentes unidades de medida
+        grid aplicadas hablada en parrafos anteriores.
+        Por motivos practicos no mostramos el codigo
+        que define los colores de los articulos,
+        solo el codigo que define las filas y columnas en la 
+        cuadricula, estas porpiedades estan 
+        resaltadas en negro.
+    </p>
+    <p>
+       <span><strong> .container {</strong></span>
+           <span> font-size: 40px;</span>
+           <span> width: 100%;</span>
+           <span> background: lightgray;</span>
+           <span> display: grid;</span>
+           <span><strong> grid-template-columns: 1fr 100px 2fr;</strong></span>
+           <span><strong> grid-row: 50px 50px;</strong></span>
+         <span><strong> } </strong></span>
+    </p>
+    <div class="container2">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+
+</div>
+    
+</body>
+</html>

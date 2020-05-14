@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4- agega filas con "grid-template-rows"</title>
+    <link rel="stylesheet" href="4-grid-template-rows.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Agrega filas con "grid-template-rows"
+        </h1>
+    </header>
+    <p>
+        La cuadricula que creaste en el reto pasado ajustara
+        el numero de filas automaticamente. Para ajustar las
+        filas manual mente, usa la propiedad
+        <strong>grid-template-rows</strong> en la misma forma
+        que tu usaste <strong>grid-template-columns</strong>
+        en el desafio anterior.
+    </p>
+    <hr>
+    <p>
+        Agrega 2 filas a la malla que sean de 50px de alto 
+        cada una.
+    </p>
+    <hr>
+    <h2>
+        Vista previa
+    </h2>
+    <h3>
+        contenedor original
+    </h3>
+    <p>Aqui vemos el contenedor original</p>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+    <h3>
+        grid-template-rows aplicado
+    </h3>
+    <p>
+        a continuacion vemos como se comporta
+        el contenedor con la propiedad aplicada. REcuerda que hemos 
+        ajustado manual mente dos filas con <strong>40px</strong> de alto
+        con la propiedad <strong>grid-template-rows</strong>
+    </p>
+    <p>
+       <span><strong> .container2 {</strong></span>
+           <span> display: grid;</span>
+           <span> grid-template-columns: 100px 100px 100px;</span>
+           <span><strong> grid-template-rows: 50px 50px;</strong></span>
+           <span> width: 100%;</span>
+           <span> background-color: lightgray;</span>
+           <span> font-size: 40px;</span>
+       <span><strong> }</strong></span>
+       <span> .d1{background:LightSkyBlue;}</span>
+       <span> .d2{background:LightSalmon;}</span>
+       <span> .d3{background:PaleTurquoise;}</span>
+       <span> .d4{background:LightPink;}</span>
+       <span> .d5{background:PaleGreen;}</span>
+    </p>
+    <div class="container2">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>    
+    
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+    background-color: lavender;
+    max-width: 800px;
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+
+}
+span {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    font-size: 40px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: auto 50px 10% 2fr 1fr;
+    grid-row: 50px 50px;
+}
+.container2 {
+    font-size: 40px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 100px 2fr;
+    grid-row: 50px 50px;
+}
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+.example {
+    background-color: whitesmoke;
+    margin: 5px auto;
+    padding: 2%;
+    border-radius: 2px;
+}
