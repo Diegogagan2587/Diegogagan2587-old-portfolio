@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una brecha o espacio entre 
+        columnas usando "grid-column-gap"</title>
+    <link rel="stylesheet" href="6-grid-column-gap.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Crear una brecha o espacio entre 
+            columnas usando "grid-column-gap"
+        </h1>
+    </header>
+    <p>
+        Hasta aqui en las cuadriculas(grids) que tu has creado,
+        todas las columnas han sido apretadas unas contra otras.
+        Algunas veces tu quieres una becha o espacio(gap) entre
+        cada columna. Para añadir un espacio entre las columnas,
+        usa la propiedad <strong>grid-column-gap</strong>
+        algo asi como esto:
+        <span>
+            <strong class="example">grid-column-gap: 10px;</strong>
+        </span>
+        Esto crea 10px de espacio vacio entre todas nuestras
+        columnas.
+    </p>
+    <hr>
+    <p>
+        Dale a las columnas en la cuadricula una espacio
+        u brecha de 20px.
+    </p>
+    <hr>
+    <h2>
+        Ejemplos  y vistas previas del codigo
+    </h2>
+    <h3>
+        Contenedor grid 1
+    </h3>
+    <p>
+        En este contenedor tenemos definidas las propiedades
+        que hemos revisado previamente, aun no agregamos
+        espacios o brechas con la 
+        propiedad grid-column-gap o grid-row-gap. <br>
+        <br>
+        <span><strong> .container2 {</strong></span>
+            <span> font-size: 40px;</span>
+            <span> min-height: 300px;</span>
+            <span> width: 100%;</span>
+            <span> background: lightgray;</span>
+            <span> display: grid;</span>
+            <span> grid-template-columns: 1fr 1fr 1fr;</span>
+            <span> grid-template-rows: 1fr 1fr 1fr;</span>
+        <span><strong> }</strong></span>
+    </p>
+    <div class="container">
+        <div  class="d1">1</div>
+        <div  class="d2">2</div>
+        <div  class="d3">3</div>
+        <div  class="d4">4</div>
+        <div  class="d5">5</div>
+    </div>
+    <h3>Contenedor Grid 2</h3>
+    <p>
+        En este contenegor hemos logrado crear brechas o
+        espacios entre las columnas de la malla, 
+        la propiedad que usamos en el contenedor para lograr 
+        esto esta resaltada en negro en el codigo de abajo
+        <br><br>
+       <span><strong> .container2 {</strong></span>
+           <span> font-size: 40px;</span>
+           <span> min-height: 300px;</span>
+           <span> width: 100%;</span>
+           <span> background: lightgray;</span>
+           <span> display: grid;</span>
+           <span> grid-template-columns: 1fr 1fr 1fr;</span>
+           <span><strong> grid-column-gap: 20px;</strong></span>
+           <span> grid-template-rows: 1fr 1fr 1fr;</span>
+       <span><strong> }</strong></span>
+    </p>
+    <div class="container2">
+        <div  class="d1">1</div>
+        <div  class="d2">2</div>
+        <div  class="d3">3</div>
+        <div  class="d4">4</div>
+        <div  class="d5">5</div>
+    </div>    
+
+</div>
+
+</body>
+</html>

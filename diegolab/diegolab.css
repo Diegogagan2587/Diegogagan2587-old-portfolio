@@ -1,0 +1,14 @@
+.learn-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 135, 57);
+    min-height: 300px;
+}
+.learn-main-container h2 {
+    text-align: center;
+}
+.lrn-wks-container {
+    display: flex;
+    flex-direction: row;
+    background-color: lightsalmon;
+}

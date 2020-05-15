@@ -1,0 +1,44 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+    background-color: lavender;
+    max-width: 800px;
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+}
+span {
+    display: flex;
+    flex-direction: column;
+}
+.example {
+    background-color: whitesmoke;
+    margin: 10px auto 10px;
+    padding: 2%;
+    border-radius: 3px;
+}
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.container2 {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}

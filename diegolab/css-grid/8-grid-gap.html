@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrega espacios mas rapido
+        con "grid-gap"</title>
+    <link rel="stylesheet" href="8-grid-gap.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Agrega espacios mas rapido
+            con "grid-gap"
+        </h1>
+    </header>
+    <h2>
+        Descripcion de la propiedad:
+    </h2>
+    <p>
+        <strong>grid-gap</strong> es una propiedad abreviada
+        para <strong>grid-row-gap</strong> y  
+        <strong>grid-column-gap</strong> de los dos desafios
+        anteriores que es mas conveniente para usar.
+        si <strong>grip-gap</strong> tiene un valor,
+        este creara un espacio entre todas las filas y columnas.
+        Sin embargo, si hay dos valores, se usara el primero 
+        para ajustar el espacio entre las filas y el segundo valor
+        para las columnas.
+    </p>
+    <hr>
+    <p>
+        Usa <strong>grid-gap</strong> para introducir espacios de 10px
+        entre las filas y espacios de 20px entre las columnas.
+    </p>
+    <hr>
+    <h2>
+        Vista previa y codigo:
+    </h2>
+    <h3>
+        Vista previa 1
+    </h3>
+    <p>
+        En esta figura determinamos primero las propiedades
+        de cuadricula de nuestro contenedor
+        para este caso tenemos medidas de
+        1fraccion para cada fila y columna y en total
+        tenemos 3 fracciones, haciendo una cuadricula
+        de 3 partes por 3 partes dando como resultado 9 espacios.
+        solo hemos ocupado 5 de 9. Las propiedades
+        que definen la cuadricula estan resaltadas en negro:
+        <br><br>
+       <span><strong> .container {</strong></span>
+           <span> background: LightGray;</span>
+           <span> font-size: 40px;</span>
+           <span> min-height: 300px;</span>
+           <span> width: 100%;</span>
+           <span><strong> display: grid;</strong></span>
+           <span><strong> grid-template-rows: 1fr 1fr 1fr;</strong></span>
+           <span><strong> grid-template-columns: 1fr 1fr 1fr;</strong></span>
+       <span><strong> }</strong></span>
+    </p>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+    <h3>
+        Vista Previa 2
+    </h3>
+    <p>
+        En este ejempo ya hemos definido los espacios de
+        10 px entre filas y de 20 px entre columnas, la 
+        propiedad que hemos usado para lograr esto esta resaltada
+        en negro en el codigo de abajo:
+        <br><br>
+        <span><strong> .container {</strong></span>
+            <span> background: LightGray;</span>
+            <span> font-size: 40px;</span>
+            <span> min-height: 300px;</span>
+            <span> width: 100%;</span>
+            <span> display: grid;</span>
+            <span> grid-template-rows: 1fr 1fr 1fr;</span>
+            <span> grid-template-columns: 1fr 1fr 1fr;</span>
+            <span><strong> grid-gap: 10px 20px</strong></span>
+        <span><strong> }</strong></span>
+    </p>
+    <div class="container2">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+    
+</div>
+    
+</body>
+</html>
