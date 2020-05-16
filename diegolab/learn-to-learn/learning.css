@@ -1,0 +1,18 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: lavender;
+}
+.picture-thinking-mode {
+    display: flex;
+    flex-direction: row;
+    max-height: 768px;
+    max-width: 1366px;
+    height: 60%;
+    width: 60%;
+}
