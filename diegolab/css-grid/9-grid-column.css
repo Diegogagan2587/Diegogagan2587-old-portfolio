@@ -22,10 +22,10 @@ span {
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
-    min-width: 320px;
+    min-width: 240px;
     max-width: 800px;
     max-height: 500px;
-    min-height: 200px;
+    min-height: 150px;
     margin: 10px auto;
     width: 99%;
     height: 99%;
@@ -36,7 +36,7 @@ span {
     justify-content: center;
     max-width: 50px;
     width: 99%;
-    min-height: 174px;
+    min-height: 130.5px;
     max-height: 435px;
     height: 99%;
     margin: auto 0 0;
@@ -46,7 +46,7 @@ span {
     flex-direction: column;
     background-color: rgba(63, 47, 47, 0.514);
     justify-content: space-between;
-    min-height: 174px;
+    min-height: 130.5px;
     max-height: 435px;
     height: 99%;
     max-width: 10px;
@@ -57,9 +57,9 @@ span {
     display: flex;
     flex-direction: column;
     max-width: 740px;
-    min-width: 296px;
+    min-width: 222px;
     max-height: 500px;
-    min-height: 200px;
+    min-height: 150px;
     width: 99%;
     height: 99%;
 }
@@ -81,7 +81,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    min-height: 174px;
+    min-height: 130.5px;
     max-height: 435px;
     height: 99%;
     grid-gap: 5px 5px;
@@ -95,7 +95,8 @@ span {
 .g7{background-color: rgb(221, 139, 32);}
 .g8{background-color: rgb(10, 155, 160);}
 .g9{background-color: rgb(13, 90, 233);}
-/*Code below here correponde to the examples*/
+/*Code below here correponde to the examples from free
+code camp*/
 .container {
     font-size: 40px;
     min-height: 300px;
