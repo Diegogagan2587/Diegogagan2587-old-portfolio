@@ -1,0 +1,120 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+    font-family: sans-serif;
+}
+.main-page-container {
+    background-color: lavender;
+    max-width: 800px;
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+}
+span {
+    display: flex;
+    flex-direction: row;
+}
+.example {
+    background-color: whitesmoke;
+    padding: 2%;
+    margin: 0 auto;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    min-width: 320px;
+    max-width: 800px;
+    max-height: 500px;
+    min-height: 200px;
+    margin: 10px auto;
+    width: 99%;
+    height: 99%;
+}
+.container1 .text-rows-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50px;
+    width: 99%;
+    min-height: 174px;
+    max-height: 435px;
+    height: 99%;
+    margin: auto 0 0;
+}
+.container1 .number-rows-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(63, 47, 47, 0.514);
+    justify-content: space-between;
+    min-height: 174px;
+    max-height: 435px;
+    height: 99%;
+    max-width: 10px;
+    width: 100%;
+    margin: auto 0 0;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 740px;
+    min-width: 296px;
+    max-height: 500px;
+    min-height: 200px;
+    width: 99%;
+    height: 99%;
+}
+.container2 .text-column-container {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    max-height: 40px;
+}
+.container2 .number-column-container {
+    background-color: rgba(63, 47, 47, 0.514);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 25px;
+}
+.container3-grid {
+    background-color: rosybrown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 174px;
+    max-height: 435px;
+    height: 99%;
+    grid-gap: 5px 5px;
+}
+.g1{background-color: burlywood;}
+.g2{background-color: cadetblue;}
+.g3{background-color: cornflowerblue;}
+.g4{background-color: rgb(223, 169, 99);}
+.g5{background-color: rgb(60, 147, 150);}
+.g6{background-color: rgb(64, 123, 231);}
+.g7{background-color: rgb(221, 139, 32);}
+.g8{background-color: rgb(10, 155, 160);}
+.g9{background-color: rgb(13, 90, 233);}
+/*Code below here correponde to the examples*/
+.container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5 {
+    background: PaleGreen;
+
+}
+.item5-2 {
+    background: PaleGreen;
+    grid-column: 2/4;
+}

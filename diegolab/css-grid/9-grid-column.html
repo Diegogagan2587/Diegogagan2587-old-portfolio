@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: Usa "grid-column" para controlar
+        el espaciado.
+    </title>
+    <link rel="stylesheet" href="9-grid-column.css">
+</head>
+<body>
+<div class="main-page-container">
+    <h1>
+        CSS Grid: Usa "grid-column" para controlar
+        el espaciado.
+    </h1>
+    <p>
+        Hasta este punto, todas las propiedades
+        que han sido discutidas son para contenedores
+        grid. La propiedad 
+        <strong>grid-column</strong> es la primera para
+        usar en los articulos grid mismos.
+        <br><br>
+        Asi es como lucen las lineas para una cuadricula
+        de 3X3:
+    </p>
+<div class="container1">
+    <div class="text-rows-container">
+        <p>Lineas de Filas</p>
+    </div>
+    <div class="number-rows-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="container2">
+        <div class="text-column-container">
+            <p>Lineas de Columnas</p>
+        </div>
+        <div class="number-column-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="container3-grid">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="g6"></div>
+            <div class="g7"></div>
+            <div class="g8"></div>
+            <div class="g9"></div>
+        </div>
+    </div>
+</div>
+        <p>
+            Para controlar la cantidad de columnas que un articulo
+            o item ocupara, tu pudes usar la propiedad
+            <strong>grid-column</strong> en conjunto con el
+            numero de lineas que quieras para que inicie y termine
+            tu articulo o item.
+            <br><br>
+            Aqui hay un ejemplo: 
+            <br><br>
+            <span class="example"> 
+                grid-column: 1/3;
+            </span>
+            <br><br>
+            Esto hara que el articulo inicie en la primera linea vertical
+            de la cuadricula en la izquierda y abarque hasta la 3ra lina 
+            de la cuadricula, ocupando 2 columnas.
+        </p>
+        <hr>
+        <p>
+            Haz que el articulo con la classe 
+            <strong>item5</strong> consuma las ultimas dos columnas
+            de la cuadricula.
+        </p>
+        <hr>
+        <h2>
+            Vista previa y codigo:
+        </h2>
+        <h3>
+            Vista previa 1
+        </h3>
+        <p>
+            A continuacion creamos una figura con las 
+            siguientes caracteristicas:
+            <br><br>
+           <span><strong> .container {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+               <span> display: grid;</span>
+               <span> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid-gap: 10px;</span>
+           <span><strong> }</strong></span>
+           <span> .item1{background:LightSkyBlue;}</span>
+           <span> .item2{background:LightSalmon;}</span>
+           <span> .item3{background:PaleTurquoise;}</span>
+           <span> .item4{background:LightPink;}</span>
+           <span><strong> .item5 {</strong></span>
+                   <span> background: PaleGreen;</span>
+               <span><strong> }</strong></span>
+        </p>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
+        <h3>
+            Vista previa 2
+        </h3>
+        <p>
+            Ya que el codigo para hacer el cuadro de abajo esta escrito
+            en el parrafo anterior puedes consultalo ahi. Aqui nos 
+            interesa <strong>grid-column</strong> que ocupamos
+            para definir que el item 5 ocupara un espaciado
+            apartir de la linea de la columna hasta la 4ta.
+            Si no recuerdas donde estan las lineas puedes ver 
+            regresar a la parte superior.
+            A continuacion te mostramos como 
+            ajustamos el item 5, fijate que
+            el ajuse te hizo en la clase
+            de el articulo y no en la de
+            el contenedor, <br>
+             el codigo esta subrayado en negro:
+            <br><br>
+            <span><strong> .container {</strong></span>
+                <span> font-size: 40px;</span>
+                <span> min-height: 300px;</span>
+                <span> width: 100%;</span>
+                <span> background: lightgray;</span>
+                <span> display: grid;</span>
+                <span> grid-template-columns: 1fr 1fr 1fr;</span>
+                <span> grid-template-rows: 1fr 1fr 1fr;</span>
+                <span> grid-gap: 10px;</span>
+            <span><strong> }</strong></span>
+             <span><strong>.item5 {</strong></span>
+               <span> background: PaleGreen;</span>
+               <span><strong> grid-column: 2/4;</strong></span>
+           <span><strong> }</strong></span>
+        </p>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5-2">5</div>
+        </div>
+
+
+</div>
+</body>
+</html>

@@ -10,9 +10,8 @@ html {
 }
 .picture-thinking-mode {
     display: flex;
-    flex-direction: row;
     max-height: 768px;
     max-width: 1366px;
-    height: 60%;
-    width: 60%;
+    height: 50%;
+    width: 50%;
 }
