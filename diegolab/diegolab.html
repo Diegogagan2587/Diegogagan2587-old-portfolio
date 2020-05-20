@@ -2,7 +2,6 @@
 <html>
     <head>
         <!--<link href="../reset.css" rel="stylesheet" type="text/css"> -->
-        <link href="../estilos.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="diegolab.css">
     </head>
     <body>
@@ -14,12 +13,13 @@
                 <li><a href="#">Diego Lab</a></li>
             </ul>
         </nav>
-        <div class="container">
+        <div class="main-page-container">
         <header>
             <h1 class="title-color title-border">Diego Lab</h1>
             <p>Welcome to diego lab! this is the place
                 where I will Share in all my knowledge with you!
             </p>
+        </header>
             <div id="learn-how-to-learn" class="learn-main-container">
                 <h2>
                     Aprende como aprender
@@ -243,270 +243,453 @@
                     usar flexbox y las diferentes opciones de diseño que 
                     ofrece.
                 </p>
-                <h3>CSS Flexbox: Usar "display: flex" para 
-                    posicionar dos Cajas
-                </h3>
-                <p>Esta seccion usa estilos de retos alternados
-                    para mostrar como usar CSS para el posicionamiento
-                    de elementos en una forma flexible. Primero un desafio
-                    explicara la teoria, luego un reto practico usando
-                    un componente simple de un tweet donde aplicaremos el
-                    concepto de flexbox 
-                </p>
-                <p>Colocando la propiedad <strong>display: flex;</strong> 
-                en un elemento te permitira usar otras propiedades de "flex"
-                para construir una pagina adaptable.
-            </p>
-            <p>Agrega la propiedad CSS <strong>display</strong>
-               a <strong>#box-container</strong> y configura
-               su valor a flex. 
-                <a href="css-felxbox/test-display-flex.html" target="_blank">prueba de flex</a>
-                aqui
-                <hr>
-            </p>
-            <h3>CSS Flexbox: Agrega Super poderes Flex a un Tweet 
-                incrustado.
-            </h3>
-            <p>puedes <a 
-                href="css-felxbox/2-flexbox-add-superpowers.html"
-                target="_blank">
-                encontrar la prueba</a> aqui
-                <hr>
-            </p>
-            <h3>CSS Flexbox: Usa la propiedad <strong>"flex-direction"</strong>
-                para hacer una fila (row)
-            </h3>
-                <p>puedes <a 
-                    href="css-felxbox/flexbox-flex-directions.html"
-                    target="_blank">
-                    encontrar la prueba</a> aqui
-                    <hr>
-                </p>
-            <h3>
-                CSS Flexbox: Aplica la propiedad <strong>flex-direction</strong>
-                para crear filas(rows) en un tweet incrustado.
-             </h3>
-                 <p>puedes <a 
-                    href="css-felxbox/4-rows-tweet-embed.html"
-                    target="_blank">
-                    encontrar la prueba</a> aqui
-                    <hr>
-                </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad <strong>flex-direction</strong>
-                para hacer una columna.
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/5-flexbox-make-column.html" 
-                target="_blank">encontrar la prueba</a>
-                aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Aplica la propiedad "flex-direction"
-                para crear una columna en un tweet incrustado.
-            </h3>
-            <p>
-                puedes<a href="css-felxbox/6-flexbox-column-tweet.html"
-                target="_blank">encontrar la prueba</a> aqui.
-                <hr>
-            </p>
-            <h3>CSS Flexbox: Alinea elementos usando la 
-                propiedad "justify-content"
-            </h3>
-            <p>
-                Puedes<a 
-                href="css-felxbox/7-flexbox-justify-content.html"
-                target="_blank">encontrar el ejemplo</a>aqui
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad justify-content 
-                en el tweet incrustado
-            </h3>
-            <p>
-                Puedes<a 
-                href="css-felxbox/8-justifi-content-tweet.html"
-                target="_blank">encontrar el ejemplo</a>aqui
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Alinea Elementos Usanto la 
-                Propiedad 
-                <strong>"align-items"</strong>.
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/9-flexbox-align-items.html" target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad align-items en el
-                tweet incrustado
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/10-flexbox-align-items-tweet.html" target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la Propiedad flex-wrap para envolver
-                una fila o columna
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/11-flexbox-flex-wrap.html" target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad "flex-shrink" para
-                enconger articulos.
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/12-flex-shrink.html" target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad "flex-grow"
-                para expandir articulos
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/13-flexbox-flex-grow.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p> 
-            <h3>
-                CSS Flexbox: Usa la propiedad "flex-basis"
-                para ajustar el tamaño inicial de un
-                articulo.
-            </h3>    
-            <p>
-                puedes <a href="css-felxbox/14-flexbox-flex-basis.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad flex shorthand
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/15-flexbox-flex-shorthand.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS flexbox: Usa la propiedad "order" para 
-                reorganizar articulos
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/16-flexbox-order-property.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Flexbox: Usa la propiedad "align-self"
-            </h3>
-            <p>
-                puedes <a href="css-felxbox/17-flexbox-align-self.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h2>CSS Grid.</h2>
-            <h3>
-                Introduccion a los desafios CSS Grid
-            </h3>
-            <p>
-                puedes <a href="css-grid/1-css-grid-intro.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: Crea tu primera cuadricula CSS
-            </h3>
-            <p>
-                puedes <a href="css-grid/2-first-grid.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: Agrega Columnas con
-                "grid-template-columns"
-            </h3>
-            <p>
-                puedes <a href="css-grid/3-grid-template-columns.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: agrega Filas con "grid-template-rows"
-            </h3>
-            <p>
-                puedes <a href="css-grid/4-grid-template-rows.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: Usa unidades CSS Grid para cambiar
-                el tamaño de columnas y filas
-            </h3>
-            <p>
-                puedes <a href="css-grid/5-grid-units.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: Crear una brecha o espacio entre 
-                columnas usando "grid-column-gap"
-            </h3>
-            <p>
-                puedes <a href="css-grid/6-grid-column-gap.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid:Crea un espacio entre filas usando
-                "grid-row-gap"
-            </h3>
-            <p>
-                puedes <a href="css-grid/7-grid-row-gap.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: Agrega espacios mas rapido
-                con "grid-gap"
-            </h3>
-            <p>
-                puedes <a href="css-grid/8-grid-gap.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
-            <h3>
-                CSS Grid: Usa "grid-column" para controlar
-                el espaciado.
-            </h3>
-            <p>
-                puedes <a href="css-grid/9-grid-column.html" 
-                target="_blank">
-                    encontrar el ejemplo</a> aqui.
-                <hr>
-            </p>
+                <!-- Aqui inicia el menu de navegacion-->
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="#">
+                                Principios de diseño <br>
+                                web "Responsive"
+                        </a></li>
+                        <li><a href="#">CSS Flexbox:</a>
+                            <ul>
+                                <li><a 
+                                    href="css-felxbox/test-display-flex.html" target="_blank">
+                                    CSS Flexbox: Usar "display: flex" para 
+                                    posicionar dos Cajas</a>
+                                </li>
+                                <li><a 
+                                    href="css-felxbox/2-flexbox-add-superpowers.html"
+                                    target="_blank">
+                                    CSS Flexbox: Agrega Super poderes Flex a un Tweet 
+                                    incrustado.</a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/flexbox-flex-directions.html"
+                                    target="_blank">
+                                    CSS Flexbox: Usa la propiedad <strong>"flex-direction"</strong>
+                                    para hacer una fila (row)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/4-rows-tweet-embed.html"
+                                        target="_blank">
+                                    CSS Flexbox: Aplica la propiedad <strong>flex-direction</strong>
+                                    para crear filas(rows) en un tweet incrustado.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/6-flexbox-column-tweet.html"
+                                    target="_blank">
+                                    CSS Flexbox: Aplica la propiedad "flex-direction"
+                                    para crear una columna en un tweet incrustado.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/7-flexbox-justify-content.html"
+                                    target="_blank">
+                                    CSS Flexbox: Alinea elementos usando la 
+                                    propiedad "justify-content"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/8-justifi-content-tweet.html"
+                                    target="_blank">
+                                    CSS Flexbox: Usa la propiedad justify-content 
+                                    en el tweet incrustado
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/9-flexbox-align-items.html"
+                                    target="_blank">
+                                    CSS Flexbox Alinea Elementos Usanto la 
+                                    Propiedad align-items
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/10-flexbox-align-items-tweet.html" target="_blank">
+                                    CSS Flexbox: Usa la propiedad align-items en el
+                                    tweet incrustado
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/11-flexbox-flex-wrap.html" target="_blank">
+                                    CSS Flexbox: Usa la Propiedad flex-wrap para envolver
+                                    una fila o columna
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/12-flex-shrink.html" target="_blank">
+                                    CSS Flexbox: Usa la propiedad "flex-shrink" para
+                                    enconger articulos.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/13-flexbox-flex-grow.html" 
+                                    target="_blank">
+                                    CSS Flexbox: Usa la propiedad "flex-grow"
+                                    para expandir articulos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/14-flexbox-flex-basis.html" 
+                                    target="_blank">
+                                    CSS Flexbox: Usa la propiedad "flex-basis"
+                                    para ajustar el tamaño inicial de un
+                                    articulo.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="css-felxbox/15-flexbox-flex-shorthand.html" 
+                                    target="_blank">
+                                    CSS Flexbox: Usa la propiedad flex shorthand
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 2.3
+                                    </a>
+                                    <!--                               <li>
+                                <h3>
+                                    CSS flexbox: Usa la propiedad "order" para 
+                                    reorganizar articulos
+                                </h3>
+                                <p>
+                                    puedes <a href="css-felxbox/16-flexbox-order-property.html" 
+                                    target="_blank">
+                                        encontrar el ejemplo</a> aqui.
+                                    <hr>
+                                </p>
+                               </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 2.3
+                                    </a>
+                                    <!--                               <li>
+                                <h3>
+                                    CSS Flexbox: Usa la propiedad "align-self"
+                                </h3>
+                                <p>
+                                    puedes <a href="css-felxbox/17-flexbox-align-self.html" 
+                                    target="_blank">
+                                        encontrar el ejemplo</a> aqui.
+                                    <hr>
+                                </p>
+                               </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a><!--                               <li>
+                                        <h3>
+                                            Introduccion a los desafios CSS Grid
+                                        </h3>
+                                        <p>
+                                            puedes <a href="css-grid/1-css-grid-intro.html" 
+                                            target="_blank">
+                                                encontrar el ejemplo</a> aqui.
+                                            <hr>
+                                        </p>
+                                       </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a><!--                               <li>
+                                        <h3>
+                                            CSS Grid: Crea tu primera cuadricula CSS
+                                        </h3>
+                                        <p>
+                                            puedes <a href="css-grid/2-first-grid.html" 
+                                            target="_blank">
+                                                encontrar el ejemplo</a> aqui.
+                                            <hr>
+                                        </p>
+                                       </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a><!--                               <li>
+                                        <h3>
+                                            CSS Grid: Agrega Columnas con
+                                            "grid-template-columns"
+                                        </h3>
+                                        <p>
+                                            puedes <a href="css-grid/3-grid-template-columns.html" 
+                                            target="_blank">
+                                                encontrar el ejemplo</a> aqui.
+                                            <hr>
+                                        </p>
+                                       </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a><!--                               <li>
+                                        <h3>
+                                            CSS Grid: agrega Filas con "grid-template-rows"
+                                        </h3>
+                                        <p>
+                                            puedes <a href="css-grid/4-grid-template-rows.html" 
+                                            target="_blank">
+                                                encontrar el ejemplo</a> aqui.
+                                            <hr>
+                                        </p>
+                                       </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a><!--                               <li>
+                                        <h3>
+                                            CSS Grid: Usa unidades CSS Grid para cambiar
+                                            el tamaño de columnas y filas
+                                        </h3>
+                                        <p>
+                                            puedes <a href="css-grid/5-grid-units.html" 
+                                            target="_blank">
+                                                encontrar el ejemplo</a> aqui.
+                                            <hr>
+                                        </p>
+                                       </li>-->
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 2.3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                    href="#">
+                                        Enlace 3.2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu">
+                       <li id="css-grid">
+                           <h2>CSS Grid:</h2>
+                           <ul>
+
+
+
+
+
+                               <li>
+                                <h3>
+                                    CSS Grid: Crear una brecha o espacio entre 
+                                    columnas usando "grid-column-gap"
+                                </h3>
+                                <p>
+                                    puedes <a href="css-grid/6-grid-column-gap.html" 
+                                    target="_blank">
+                                        encontrar el ejemplo</a> aqui.
+                                    <hr>
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid:Crea un espacio entre filas usando
+                                    "grid-row-gap"
+                                </h3>
+                                <p>
+                                    puedes <a href="css-grid/7-grid-row-gap.html" 
+                                    target="_blank">
+                                        encontrar el ejemplo</a> aqui.
+                                    <hr>
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Agrega espacios mas rapido
+                                    con "grid-gap"
+                                </h3>
+                                <p>
+                                    puedes <a href="css-grid/8-grid-gap.html" 
+                                    target="_blank">
+                                        encontrar el ejemplo</a> aqui.
+                                    <hr>
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Usa "grid-column" para controlar
+                                    el espaciado.
+                                </h3>
+                                <p>
+                                    puedes <a href="css-grid/9-grid-column.html" 
+                                    target="_blank">
+                                        encontrar el ejemplo</a> aqui.
+                                    <hr>
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Usa grid-row para controlar el
+                                    espaciado
+                                </h3>
+                                <p>
+                                    Puedes <a href="css-grid/10-grid-row.html"
+                                    target="_blank">
+                                    encontrar el ejemplo </a>aqui.
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Alinear un Articulo horizontalmente usando
+                                    "justify-self"
+                                </h3>
+                                <p>
+                                    Puedes <a href="css-grid/11-grid-justify-self.html"
+                                    target="_blank">
+                                    encontrar el ejemplo </a>aqui.
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Alinear verticalmente un elemento usando
+                                    "align-self"
+                                </h3>
+                                <p>
+                                    Puedes <a href="css-grid/12-grid-align-self.html"
+                                    target="_blank">
+                                    encontrar el ejemplo </a>aqui.
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Alinea todos los elementos 
+                                    horizontalmente usando
+                                    "justify-items"
+                                </h3>
+                                <p>
+                                    Puedes <a href="css-grid/13-grid-justify-items.html"
+                                    target="_blank">
+                                    encontrar el ejemplo </a>aqui.
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Alinea todos los elementos 
+                                    verticalmente usando
+                                    "align-items"
+                                </h3>
+                                <p>
+                                    Puedes <a href="css-grid/14-grid-align-items.html"
+                                    target="_blank">
+                                    encontrar el ejemplo </a>aqui.
+                                </p>
+                               </li>
+                               <li>
+                                <h3>
+                                    CSS Grid: Divide la cuadricula en una
+                                    plantilla de area
+                    
+                                </h3>
+                                <p>
+                                    Puedes <a href="css-grid/15-grid-template-areas.html"
+                                    target="_blank">
+                                    encontrar el ejemplo </a>aqui.
+                                </p>
+                               </li>
+                           </ul>
+                           
+                       </li> 
+                    </ul>
+                </div>
+<p>
+    Esto es un texto de prueba de esta pagina en
+     construccion
+</p>
+
+
 
             </div>
-        </header>
-    </div>
-    </body>
+        
+</div>
+</body>
 </html>

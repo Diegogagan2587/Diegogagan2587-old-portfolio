@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: ALinea todos los elementos 
+        horizontalmente usando
+        "justify-items"
+    </title>
+    <link rel="stylesheet" href="13-grid-justify-items.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: ALinea todos los elementos 
+            horizontalmente usando
+            "justify-items"
+        </h1>
+    </header>
+    <p>
+        Algunas veces tu quieres que todos lo elementos
+        en tu cuadricula CSS compartan la misma alineacion.
+        Puedes usarlas propiedades aprendidas previamente
+        y alinearlas individualmente, o puedes alinearlas
+        todas de una vez horizontalmente por medio de el uso
+        de <strong>justify-items</strong> en tu contenedor grid
+        (contenedor de cuadricula). Esta propiedad puede aceptar 
+        todos los mismos valores acerca de los que has aprendido
+        en los 2 desafios previos, la diferencia es o Esta en que
+        esta movera todos los elementos en nuestra cuadricula(grid)
+        a la alineacion deseada.
+    </p>
+    <hr>
+    <p>
+        Usa esta propiedad para centrar todos nuestos elementos
+        horizontalmente.
+    </p>
+    <hr>
+    <h2>Vista previa de ejemplos</h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        Este sera nuestro contenedor grid o contenedor de cuadricula
+        de base. a este aplicaremos en el ejemplo dos la propiedad
+        que estamos revisando, Echale un ojo a este conteder dor
+        y nota la diferencia entre este y el del ejemplo 2
+        para que puedas observar como se comportan los contenedores
+        de malla con la propiedad que estamos revisando
+         (justify-items)
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        Notamos como al igual que en los desafios de anteriores 
+        en este ejemplo 2 de este desafio la propiedad
+        <strong>justify-items</strong> Alinea todos los articulos
+        horizontalmente en el centro, nota que
+        los fondos de los elementos ocupan el mismo espacio que
+        el contenido de los elementos que en este caso son los 
+        dentro de ellos, a continuacion puedes ver el codigo
+        para formar el ejemplo y la propiedad de este tema
+        resaltada en azul violeta:
+    </p>
+    <div class="example">
+        <p>
+           <span><strong> .container2 {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+               <span> display: grid;</span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span> grid-gap: 10px;</span>
+               <span><strong class="blueviolet-text"> justify-items: center;</strong></span>
+           <span><strong> }</strong></span>
+           <span> .item1{background:LightSkyBlue;}</span>
+          <span>  .item2{background:LightSalmon;}</span>
+           <span> .item3{background:PaleTurquoise;}</span>
+           <span> .item4{background:LightPink;}</span>
+           <span> .item5{background:PaleGreen;}</span>
+        </p>
+
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+</div>
+</body>
+</html>

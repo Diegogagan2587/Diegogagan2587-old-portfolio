@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="15-grid-template-areas.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Divide la cuadricula en una
+            plantilla de areas
+        </h1>
+    </header>
+    <p>
+        Puedes agurpar celdas de tu cuadricula juntas dentro de un
+        area y darle al area un nombre personalizado.
+        Se hace esto por medio del uso de 
+        <strong>grid-template-areas</strong> en el contenedor
+        como esto:
+    </p>
+    <div class="example">
+        <div class="flex">
+        <p>
+           <strong> grid-templates-areas:</strong> <br>
+           &nbsp;"header header header"<br>
+           &nbsp;"advert content content" <br>
+           &nbsp;"footer footer footer"<strong>;</strong>
+        </p>
+        <div class="grid-template-example">
+            <div class="x1">header</div>
+            <div class="x1">header</div>
+            <div class="x1">header</div>
+            <div class="x1">advert</div>
+            <div class="x1">content</div>
+            <div class="x1">content</div>
+            <div class="x1">footer</div>
+            <div class="x1">footer</div>
+            <div class="x1">footer</div>
+        </div>
+    </div>
+    </div>
+    <p>
+        El codigo de arriba fusiona las tres celdas de la 
+        parte superior juntas en un area llamada 
+        <strong>header</strong>, Las tres celdas del fondo en
+        un area llamada <strong>footer</strong>, y hace dos 
+        areas en la fila de el medio; <strong>adevert</strong> 
+        y <strong>content</strong>.
+        <strong>Nota:</strong> Cada palabra en el codigo representa
+        una celda y cada par de comillas representa una fila.
+        En adicion a las etiquetas personalizadas, tu Puedes
+        usar un punto para designar una celda vacia en la 
+        cuadricula.
+    </p>
+    <hr>
+    <p>
+        Coloca la plantilla de area de tal forma que
+        la celda etiquetada como <strong>advert</strong>
+        se transforme en una celda vacia.
+    </p>
+    <hr>
+    <h2>Vista previa de ejemplos</h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        Este sera nuestra vista previa de partida, compararemos
+        este contenedor grid con el contenedor grid del
+        2do ejemplo para tener una idea de como actua 
+        nuestra propiedad  vista aqui.
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        Como podemos ver depues de aplicar la propiedad
+        para dividir la cuadricula en areas de una plantilla podemos
+        ver que en nuestro codigo ya esta declarado el nombre
+        de cada area o seccion y las celdas que estas ocupan, 
+        aun que a primera vista no se ve en la figura, 
+        a continuacion mostramos el codigo y las propiedades
+        para dividir la cuadricula en una plantilla de areas
+        resaltado en azul violeta:
+
+    </p>
+    <div class="example">
+        <p>
+             <span><strong>container2 {</strong></span>.
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+                <span> display: grid;</span>
+               <span> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid-gap: 10px;</span>
+               <span><strong class="blueviolet-text"> grid-template-areas:</strong></span>
+                <span><strong class="blueviolet-text2">"header header header"</strong></span>
+               <span><strong class="blueviolet-text2"> ". content content"</strong></span>
+               <span><strong class="blueviolet-text2">"footer footer footer";</strong></span>
+            <span><strong> }</strong></span>
+           <span> .item1{background:LightSkyBlue;}</span>
+            <span> .item2{background:LightSalmon;}</span>
+           <span> .item3{background:PaleTurquoise;}</span>
+           <span> .item4{background:LightPink;}</span>
+           <span> .item5{background:PaleGreen;}</span>
+        </p>
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</div>
+</body>
+</html>

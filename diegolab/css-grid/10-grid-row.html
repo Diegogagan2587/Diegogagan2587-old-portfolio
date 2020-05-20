@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usa grid-row para controlar el espaciado</title>
+    <link rel="stylesheet" href="10-grid-row.css">
+</head>
+<body>
+    
+</body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Usa grid-row para controlar el
+            espaciado
+        </h1>
+    </header>
+    <p>
+        Por supuesto, Tu puedes hacer articulos(items)
+        que ocupen multiples filas exactamente como
+        puedes hacerlo con las columnas. Defines las lineas
+        horizontales donde quieras que inicie el articulo(item)
+        y donde termine con el uso de la propiedad
+        <strong>grid-row</strong> sobre el articulo grid.
+    </p>
+    <hr>
+    <p>
+        Haz que el elemento con la clase
+        <strong>item5</strong> ocupe las ultimas dos filas.
+    </p>
+    <hr>
+    <h2>
+        Vista previas de los ejemplos
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        A continuacion podemos ver la figura 1.
+        Recordemos que en el ejemplo antrior el articulo 5
+        ocupaba solo un espacio del contenedor y ahora ocupa 2 
+        espacios de ancho por 1 de alto.
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        En este ejemplo ampliamos el articulo 5 
+        para que <strong>inicie</strong> en la <strong>fila horizontal 2</strong>
+        y <strong>termine</strong> en la 
+        <strong>fila horizontal 4</strong>, Esto da como
+        resultado que nuestro artiulo o item 5 ocupe 2 espacios
+        de ancho por dos espacios de alto, Puedes ver el codigo
+        abajo resaltado en Azul:
+    </p>
+    <div class="code-container">
+        <p>
+       <span><strong> .container {</strong></span>
+           <span> font-size: 40px;</span>
+           <span> min-height: 300px;</span>
+           <span> background: lightgray;</span>
+           <span> display: grid;</span>
+           <span> grid-template-columns: 1fr 1fr 1fr; </span>
+           <span> grid-template-rows: 1fr 1fr 1fr;</span>
+           <span> grid-gap: 10px;</span>
+       <span><strong> }</strong></span>
+       <span><strong> .item1{</strong>background:LightSkyBlue;<strong>}</strong></span>
+       <span><strong> .item2{</strong>background:LightSalmon;<strong>}</strong></span>
+       <span><strong> .item3{</strong>background:PaleTurquoise;<strong>}</strong></span>
+       <span><strong> .item4{</strong>background:LightPink;<strong>}</strong></span>
+       <span><strong> .item5 {</strong></span>
+           <span> background: PaleGreen;</span>
+           <span><strong> grid-column: 2 / 4;</strong></span>
+           <span><strong class="blue-text"> grid-row: 2/4;</strong></span>
+         <span><strong> }</strong></span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5-2">5</div>
+    </div>
+
+
+
+
+</div>
+</html>

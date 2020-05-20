@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: Alinear verticalmente un elemento usando
+        "align-self"
+    </title>
+    <link rel="stylesheet" href="12-grid-align-self.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Alinear verticalmente un elemento usando
+            "align-self"
+        </h1>
+    </header>
+    <p>
+        Justo como puedes alinear un elemento horizontalmente,
+        hay una forma para alinear un elemento verticalmente
+        tambien. Para hacer esto, usa la propiedad
+        <strong>align-self</strong> en un elemento.
+        Esta propiedad acepta todas las de los mismos valores
+        como <strong>justify-self</strong> de el ultimo
+        desafio.
+        Recuerda que podemos usar: <br><strong>start <br>center <br>
+        end <br></strong>
+    </p>
+    <hr>
+    <p>
+        Alinea el elemento con la clase <strong>item3</strong>
+        verticalmente ajustado en <strong>end</strong>.
+    </p>
+    <hr>
+    <h2>
+        Vistas previas
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        Ejemplo 1
+    </p>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        Obserba como al igual en con justify-self en 
+        <strong>align-self</strong> el fondo ocupa el mismo espacio que 
+        el contenido de el elemento, en este caso el espacio que o
+        cupa el numero "3" de el elemento 3.
+        Puedes ver a continuacion el codigo debajo, el codigo
+        para lograr el ejemplo de abajo esta subrayado en azul violeta
+        a continuacion:
+    </p>
+    <div class="example">
+       <span><strong> .container {</strong></span>
+           <span> font-size: 40px;</span>
+           <span> min-height: 300px;</span>
+           <span> width: 100%;</span>
+           <span> background: lightgray;</span>
+           <span> display: grid;</span>
+           <span> grid-template-columns: 1fr 1fr 1fr;</span>
+           <span> grid-template-rows: 1fr 1fr 1fr;</span>
+           <span> grid-gap: 10px;</span>
+       <span><strong> }</strong></span>
+       <span> .item1{background:LightSkyBlue;}</span>
+       <span> .item2{background:LightSalmon;}</span>
+       <span> .item3 {background: PaleTurquoise;}</span>
+       <span> .item3-2 {</span>
+           <span> background: paleturquoise;</span>
+           <span><strong class="blueviolet-text"> align-self: end;</strong></span>
+       <span><strong> }</strong></span>
+       <span> .item4{background:LightPink;}</span>
+       <span> .item5{background:PaleGreen;}</span>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3-2">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>    
+</div>
+    
+</body>
+</html>

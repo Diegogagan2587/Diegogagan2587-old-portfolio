@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: Alinea todos los elementos 
+                verticalmente usando
+                "align-items"
+    </title>
+    <link rel="stylesheet" href="14-grid-align-items.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Alinea todos los elementos 
+                verticalmente usando
+                "align-items"
+        </h1>
+    </header>
+    <p>
+        Usar la Propiedad <strong>align-items</strong> en un
+        contenedor grid(contenendor de cuadricula) ajustara la
+        alineacion verticalmente para todos los elementos 
+        en nuestra cuadricula.
+    </p>
+    <hr>
+    <p>
+        Usa la propiedad <strong>align-items</strong> para
+        mover todos los elementos a el final de cada celda.
+    </p>
+    <hr>
+    <h2>Vista Previa de Ejemplos</h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        Este sera nuestro contenedor de cuadricula de base,
+        nos servira para distinguir como se comportan
+        los elementos sin y con la propiedad de esta leccion
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        Podemos ver que <strong>align-items</strong> 
+        funciona igual que align-self y al igual que esta
+        alinea nuestros elementos de forma vertical, para 
+        este caso en particualr esta alienando nuesros elementos
+        al final de las celdas verticalmente que es lo mismo
+        que el fondo de estas, la difenrencia entre
+        <strong>align-items</strong> y align-self
+        es que align-items se aplica sobre nuestros
+        contenedor grid para ajustar todos los elementos de una sola vez
+        mientras que align-self se aplica sobre los elementos
+        para alinearlos uno por uno. Podemos ver el codigo que
+        usamos para los contenedores en negro
+        y el codigo que usamos para la alineacion resaltado
+        en azul violeta a continuacion:
+    </p>
+    <div class="example">
+        <p>
+           <span><strong> .container {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+               <span> display: grid;</span>
+               <span> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid-gap: 10px;</span>
+               <span><strong class="blueviolet-text"> align-items: end;</strong></span>
+           <span><strong> }</strong></span>
+           <span> .item1{background:LightSkyBlue;}</span>
+           <span> .item2{background:LightSalmon;}</span>
+           <span> .item3{background:PaleTurquoise;}</span>
+           <span> .item4{background:LightPink;}</span>
+           <span> .item5{background:PaleGreen;}</span>
+        </p>
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</div>
+    
+</body>
+</html>

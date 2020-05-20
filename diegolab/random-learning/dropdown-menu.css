@@ -28,6 +28,9 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+#menu ul a {
+    display: block;
+}
 #menu ul li {
     position: relative;
     float: left;

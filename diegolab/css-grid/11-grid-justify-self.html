@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Alinear usando justify-self</title>
+    <link rel="stylesheet" href="11-grid-justify-self.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Alinear un Articulo horizontalmente usando
+            "justify-self"
+        </h1>
+    </header>
+    <p>
+        En CSS Grid, El contenido de cada articulo esta localizado
+        dentro de una caja a la cual nos referimos como una celda.
+        Tu puedes alinear la posicion de el contenido dentro de esta
+        celda horizontal mente usando  la propiedad
+        <strong>justify-self</strong> en el articulo grid.
+        Por defecto esta propiedad tiene un valor de 
+        <strong>stretch</strong>, La cual hara que el contenido
+        llene todo el ancho de la celda. Esta propiedad CSS grid
+        acepta otros valores tambien:
+         <br><br>
+        <strong>start</strong>: Alinea el contenido a la izquierda
+        de la celda
+        <br><br>
+        <strong>center</strong>: Alinea el contenido en el centro
+        de la celda.
+        <br><br>
+        <strong>end</strong>: Alinea el contenido a la derecha 
+        de la celda.
+    </p>
+    <hr>
+    Usa la propiedad <Strong>justify-self</Strong> para centrar el 
+    elemento con la clase <strong>item2</strong>.
+    <hr>
+    <h2>
+        vista previa de los ejemplos
+    </h2>
+    <h3>
+        Vista previa 1
+    </h3>
+    <p>
+        A continuacion podemos ver el contenedor
+        y su comportamiendo sin aplicar la propiedad
+        justify-self.
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Vista previa 2
+    </h3>
+    <p>
+        Acontuacion vemos el comportamiento una vez aplicada
+        la propiedad justify-self, Observa que al fondo
+        de el elemento ya no ocupa toda la celda
+        sino mas bien el fondo coloreado se alineo en el centro
+        ocupando unicamente el espacio ocupado por su contenido, osea
+        alineado al centro. <br> nota que esta propiedad
+        se aplico directamente al elementoy no al contenedor.
+        Puedes ver la propiedad de la que hablamos
+        resaltada en azul violeta a continuacion:
+    </p>
+    <div class="code-container">
+        <p>
+           <span><strong> .container {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%; </span>
+               <span> background: LightGray;</span>
+               <span> display: grid;</span>
+               <span> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid gap: 10px;</span>
+           <span><strong> }</strong></span>
+           <span> .item1{background: LightSkyBlue;}</span>
+           <span> .item2{background: LightSalmon;}</span>
+           <span> .item2-2 {</span>
+               <span> background: lightsalmon;</span>
+               <span><strong class="blueviolet-text"> justify-self: center;</strong></span>
+            }
+            .item3{background:PaleTurquoise;}
+            .item4{background:LightPink;}
+            .item5{background:PaleGreen;}
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2-2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</div>
+</body>
+</html>
