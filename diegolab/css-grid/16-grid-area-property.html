@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="16-grid-area-property.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            Ubicar Elementos en Areas de la cuadricula
+            usando la propiedad "grid-area"
+        </h1>
+    </header>
+    <p>
+        Despues de crear una plantilla de areas para tu contenedor
+        de cuadricula, como mostramos el los desafios previos
+        , puedes ubicar un elemento en tu area personalizada
+        por medio de hacerle referencia a el nombre que le diste.
+        Para hacer esto se usa la propiedad 
+        <strong>grid-area</strong> en un elemento como este:
+    </p>
+    <div class="example">
+        <p>
+            <span><strong>.item {</strong></span>
+            <span class="blueviolet-text">grid-area: header;</span>
+            <span><strong>}</strong></span>
+        </p>
+    </div>
+    <p>
+        Esto le permite a la cuadricula saber que quieres que
+        la clase <strong>item1</strong> valla a el area nombrada
+        <strong>header</strong>. En este caso, El elemento
+        usara la parte de arriba enteramente porque esa fila
+        completa esta nombrada como el 
+        area <strong>header</strong>.
+    </p>
+    <hr>
+    <p>
+        Ubica un articulo o elemento con la clase 
+        <strong>item5</strong> en el area <strong>footer</strong>
+        usando la propiedad <strong>grid-area</strong>
+    </p>
+    <hr>
+    <h2>
+        Vsita previa ejemplos
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        En este ejemplo definimos la cuadriula y sus Elementos
+        para compararlos despues.
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo  2
+    </h3>
+    <p>
+        Observemos que el elemento 5 estaba al final 
+        y depues de ubicarlo con la propiedad <strong>grid-area</strong>
+        ahora ocupa toda la fila de la cima, podemos observar
+        el codigo resaltado en negro nos muestra las propiedades
+        grid y el codigo en azul-violeta nos muestra especificamente
+        el codigo que ubico nuestro elemento en la cuadricula
+        grid.
+    </p>
+    <div class="example">
+        <p>
+           <span><strong> .container {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+               <span> display: grid;</span>
+               <span> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid-gap: 10px;</span>
+               <span><strong> grid-template-areas: </strong></span>
+               <span><strong class="blueviolet-text2"> "header header header"</strong></span>
+               <span><strong> "advert content content"</strong></span>
+               <span><strong> "footer footer footer";</strong></span>
+           <span><strong> }</strong></span>
+            <span>.item1{background:LightSkyBlue;}</span>
+           <span> .item2{background:LightSalmon;}</span>
+           <span> .item3{background:PaleTurquoise;}</span>
+           <span> .item4{background:LightPink;}</span>
+            <span>.item5 {background: PaleGreen;}</span>
+            <span><strong>.item5 {</strong></span>
+             <span> background: PaleGreen;</span>
+             <span><strong class="blueviolet-text"> grid-area: header;</strong></span>
+           <span><strong> }</strong></span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5-2">5</div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
