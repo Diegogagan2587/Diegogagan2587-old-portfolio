@@ -1,0 +1,80 @@
+html {
+    background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+    background-color: lavender;
+    max-width: 800px;
+    width: 95%;
+    padding: 2%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+/*Ejercicio con target*/
+.acordeon {
+    background: rgba(238, 238, 238, 0.034);
+}
+.acordeon a {
+    text-decoration: none;
+    background: #ddd;
+    color: steelblue;
+    display: block;
+}
+.acordeon p {
+    display: none;
+}
+
+.acordeon p:target {
+    color: red;
+    display: block;
+}
+/*Ejercicio con Ventana modal :checked y radio buttons*/
+
+#modal {
+    background-color: rgb(#000,0.6);
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transition: all .4s;
+}
+#modal > p {
+
+    color #fff;
+    width: 70%;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+#abrir-modal {
+    display: none;
+}
+#label-abrir-modal {
+    display: table;
+    line-height: 3;
+    padding: 0 1em;
+    margin: auto;
+    cursor: pointer;
+}
+#abrir-modal:checked ~ #modal {
+    top: 0;
+}
+#cerrar-modal {
+    display: none;
+}
+#label-cerrar-modal {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 150;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#cerrar-modal:checked ~ #modal {
+    top: -100vh;
+}
