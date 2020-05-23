@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Usa "grid-area" sin la creacion
+        de una "Plantilla de areas"</title>
+    <link rel="stylesheet" href="17-grid-area-property.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Usa "grid-area" sin la creacion
+            de una "Plantilla de areas"
+        </h1>
+    </header>
+    <p>
+        La propiedad <strong>grid-area</strong> que aprendiste
+        en el ultimo desafio puede ser usada de otra forma.
+        Si tu cuadricula no tiene una Plantilla de areas 
+        de referenciia, tu puedes crear un area en el aire
+        para un elemento que vaya a ser posicionado 
+        como este:
+    </p>
+    <div class="example">
+        <p>
+           <strong class="blueviolet-text"> item1</strong> 
+           <strong>{</strong> grid-area: 1/1/2/4;<strong>}
+           </strong>
+        </p>
+    </div>
+    <p>
+        Esto es usando los numeros  de las lineas 
+        de las que aprendiste acerca antes, para definir donde
+        sera el area para este elemento. 
+        Los numeros en el ejemplo de abajo representa estos
+        valores.
+    </p>
+    <div class="example">
+        <p>
+            <strong>grid-area:</strong> linea horizontal para iniciar en
+            / linea vertical para iniciar en 
+            / linea horizontal para terminar en
+            /linea vertical para terminar en <strong>;</strong>
+        </p>
+    </div>
+    <p>
+        Entonces elelemento en el ejemplo ocupara las filas
+        entre las lineas 1 y 2, y las columnas entre
+        las lineas 1 y 4.
+    </p>
+    <hr>
+    <p>
+        Usando la propiedad <strong>grid-area</strong>, coloca
+        el elemento con la clase <strong>item5</strong> entre 
+        la tercera y la cuarta linea horizontal y entre la primera
+        y la cuarta linea vertical.
+    </p>
+    <hr>
+    <h2>
+        Vista Previa de los ejemplos
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        A continuacion tenemos el contenedor de este ejemplo 1
+        que nos servira para comparar como se comportara
+        el contenedor del ejemplo 2 con la propiedad "grid-area"
+    </p>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        Podemos observar como hemos definido los espacioes
+        que ocupara nuestro elemento 5 en la cuadricula con la
+        propuedad <strong>grid-area</strong> sin 
+        definir la plantilla de areas con
+        la propiedad del desafio anterior ("grid-template-areas")
+        tan solo definiendo atravez de las lineas
+        horizontales y verticales de la cuadricula 
+        donde iniciara y terminara nuestro elemento.
+        podemos ver el codigo implicado en esta
+        resaltado en morado a continuacion:
+    </p>
+    <div class="example">
+        <p>
+           <span><strong> .container {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: LightGray;</span>
+               <span class="blueviolet-text2"> display: grid;</span>
+               <span class="blueviolet-text2"> grid-template-columns: 1fr 1fr 1fr;</span>
+               <span class="blueviolet-text2"> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span class="blueviolet-text2"> grid-gap: 10px;</span>
+           <span><strong> }</strong></span>
+           <span> <strong>.item1</strong>{background:LightSkyBlue;}</span>
+           <span><strong> .item2</strong>{background:LightSalmon;}</span>
+           <span><strong> .item3</strong>{background:PaleTurquoise;}</span>
+           <span><strong> .item4</strong>{background:LightPink;}</span>
+           <span><strong> .item5</strong> {</span>
+               <span> background: PaleGreen;</span>
+               <span><strong class="blueviolet-text"> grid-area: 3/1/4/4;</strong></span>
+            }
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5-2">5</div>
+    </div>
+</div>
+</body>
+</html>

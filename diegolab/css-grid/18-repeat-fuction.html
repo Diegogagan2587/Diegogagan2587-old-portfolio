@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="18-repeat-fuction.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Reduce la repeticion usando
+            la funcion repeticion.
+        </h1>
+    </header>
+    <p>
+        Cuando usastes 
+        <strong>grid-template-columns</strong> y 
+        <strong>grid-template-rows</strong> para definir la 
+        estructura de una cuadricula, Introdujiste un valor
+        por cada fila o columna que creaste.
+        <br><br>
+        Digamos que quieres una cuadricula con 100 filas
+        de la misma altura. No es muy practico insertar
+        100 valores individual mente. Afortunadamente, hay una
+        mejor forma por medio de usar la funcion 
+        <strong>repeat</strong> para especificar el numero de veces 
+        que quieras que tus columnas o filas sean repetidas, 
+        seguidas por una coma y el valor que deseas para repetir.
+        <br><br>
+        Aqui hay un ejemplo que crearia la cuadricula de 100 filas,
+        cada fila con 50px de alto.
+    </p>
+    <div class="example">
+        <p>
+           <strong> grid-template-rows:</strong>
+            repeat(100, 50px) <strong>;</strong>
+        </p>
+    </div>
+    <p>
+        Puedes incluso repetir multiples valores con la funcion
+        repetir eh insertar la funcion entre otros valores
+        cuando definamos una estructura de cuadricula.
+        Aqui esta como eso luce:
+    </p>
+    <div class="example">
+        <p>
+           <strong> grid-template-columns:</strong>
+           repeat(2, 1fr 50px) 20px <strong>;</strong>
+        </p>
+    </div>
+    <p>
+        Esto se traduce a:
+    </p>
+    <div class="example">
+        <strong>grid-template-columns:</strong>
+        1fr 50px 1fr 50px 20px <strong>;</strong>
+    </div>
+    <p>
+        <strong>Nota:</strong>
+        Repetimos dos veces
+        <strong>1fr 50px</strong> seguido de 20px.
+    </p>
+    <hr>
+    <p>
+        Usa <strong>repeat</strong> para remover
+        la repeticion de la propiedad 
+        <strong>grid-template-columns</strong>.
+    </p>
+    <hr>
+    <h2>
+        Ejemplos y vista previa
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        Este es nuestro contenedor origininal, hemos definido 
+        este contenedor de cuadricula a travez de 
+        grid-template-columns y grid-template-rows.
+        Mostramos como hemos definido el valor de las filas
+        y columnas una por una, podemos ver esto 
+        acontinuacion:
+    </p>
+    <div class="example">
+        <p>
+           <span><strong> .container {</strong></span>
+               <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+               <span><strong> display: grid;</strong></span>
+               <span><strong class="blueviolet-text2"> grid-template-columns: 1fr 1fr 1fr;</strong></span>
+               <span><strong class="blueviolet-text2"> grid-template-rows: 1fr 1fr 1fr;</strong></span>
+               <span> grid-gap: 10px;</span>
+           <span><strong> }</strong></span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        Observa que en la funcion 
+        <strong class="blueviolet-text">grid-template-columns</strong>
+        hemos cambiado la forma de definir el numero de columnas,
+        en lugar de escribir <strong>1fr 1fr 1fr</strong>
+        como en el ejemplo 1, aqui
+        simplemente hemos usado la funcion repeat para
+        evitar escribir los valores uno por uno.
+        Podemos observar que nos da el mismo resultado
+        que en el ejemplo 1. puedes
+        ver el codigo a continuacion:
+    </p>
+    <div class="example">
+        <p>
+            <span><strong> .container {</strong></span>
+                <span> font-size: 40px;</span>
+                <span> min-height: 300px;</span>
+                <span> width: 100%;</span>
+                <span> background: lightgray;</span>
+                <span><strong> display: grid;</strong></span>
+                <span><strong class="blueviolet-text"> grid-template-columns: repeat(3, 1fr);</strong></span>
+                <span><strong class="blueviolet-text2"> grid-template-rows: 1fr 1fr 1fr;</strong></span>
+                <span> grid-gap: 10px;</span>
+            <span><strong> }</strong></span>
+         </p>
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+</div>
+</body>
+</html>
