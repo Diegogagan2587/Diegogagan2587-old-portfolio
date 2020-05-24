@@ -83,3 +83,11 @@ desplegable  */
 .menu-container ul li:hover > ul {
     display: block;
 }
+/*Here we goint to do the Dropdown menu with
+target*/
+#t1, #t2, #t3 {
+    display: none;
+}
+#t1:target, #t2:target, #t3:target {
+    display: block;
+}
