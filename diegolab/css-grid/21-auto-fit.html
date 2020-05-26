@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: Crea diseños flexibles usando
+        "auto-fit"
+    </title>
+    <link rel="stylesheet" href="21-auto-fit.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Crea diseños flexibles usando
+            "auto-fit"
+        </h1>
+    </header>
+    <p>
+        <strong>auto-fit</strong> trabaja casi identicamente
+        a <strong>auto-fill</strong>. La unica diferencia es que
+        cuando el tamaño del contenedor excede el tamaño de todos
+        los elementos combinados, <strong>auto-fill</strong>
+        se mantiene insertando filas o columnas vacias y empuja
+        a tus elementoos a un lado, mientras que
+        <strong>auto-fit</strong> colapsa esas filas o columnas vacias
+        y estira tus elementos para ajustarlos a el tamaño de
+        el contenedor.
+        <br><br>
+        <strong>Nota</strong>:Si tu contenedor no puede
+        ajustar todos tus elementos en una sola fila, estas se moveran
+        a una nueva.
+    </p>
+    <hr>
+    <p>
+        En la segunda cuadricula, usa
+        <strong>auto-fit</strong> con <strong>repeat</strong> para
+        llenar la cuadricula con columnas que tengan un ancho minimo
+        de 60px y un maximo de 1fr.
+        Luego redimensiona la vista previa para ver la diferencia.
+    </p>
+    <hr>
+    <h2>
+        Ejemplos y Vistas previas
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        A continuacion tenemos un contenedor
+        que usaremos para comparar. 
+        Este contenedor cuenta con la propiedad
+        <strong>auto-fill</strong> aplicada, 
+        No mostramos el codigo que
+        muestra las propiedades de los colores de los elementos
+        debido a que lo consideramos irrelevante para esta leccion
+        pero si puedes ver el codigo que
+        define la cuadricula y la propiedad de 
+        esta leccion, podras verlo en su codigo
+        resaltado en azul violeta a continuacion:
+    </p>
+    <div class="example">
+        <p>
+           <strong> .container {</strong>
+                font-size: 40px; <br>
+                min-height: 100px; <br>
+                width: 100%; <br>
+                background: lightgray; <br>
+                display: grid; <br>
+               <strong class="blueviolet-text">
+                grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+               </strong> <br>
+                grid-template-rows: 1fr 1fr 1fr; <br>
+                grid-gap: 10px;<br>
+           <strong>}</strong>
+        </p>
+    </div>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        No mostramos el codigo que
+        muestra las propiedades de los colores de los elementos
+        debido a que lo consideramos irrelevante para esta leccion
+        pero si puedes ver el codigo que
+        define la cuadricula y la propiedad de 
+        esta leccion, podras verlo en su codigo
+        resaltado en azul violeta a continuacion:
+    </p>
+    <div class="example">
+        <p>
+           <strong> .container2 {</strong><br>
+                font-size: 40px; <br>
+                min-height: 100px; <br>
+                width: 100%; <br>
+                background: silver;<br>
+                display: grid;<br>
+               <strong class="blueviolet-text">
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+                </strong>
+                grid-template-rows: 1fr 1fr 1fr;<br>
+                grid-gap: 10px; <br>
+           <strong> }</strong>
+        </p>
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

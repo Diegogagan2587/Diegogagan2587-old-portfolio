@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="19-minmax-fuction.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Limita el tamaño del elemento Usando
+            la funcion minmax
+        </h1>
+    </header>
+    <p>
+        Hay otra funcion built-in(incorporada) para usar
+        con 
+        <strong>grid-template-columns</strong> y
+        <strong>grid-template-rows</strong> llamada
+        <strong>minmax</strong>. Esta es usada para limitar
+        el tamaño de elementos cuando el contenedor de cuadricula
+        cambia de tamaño. Para hacer esto necesitas especificar
+        el rango aceptable de tamaño para tu elemento.
+        aqui hay un ejemplo:
+    </p>
+    <div class="example">
+        <p>
+            <strong>grid-template-columns:</strong>
+            100px <strong class="blueviolet-text2">minmax(50px, 200px)</strong>
+            <strong>;</strong>
+        </p>
+    </div>
+    <p>
+        En el codigo de arriba, 
+        <strong>grid-template-columns</strong> esta ajustado
+        para crear 2 columnas; la primera es de 100px de ancho
+        , y la segunda tiene un ancho minimo de 50px y
+        un ancho maximo de 200px.
+    </p>
+    <hr>
+    <p>
+        Usando la funcion
+        <strong>minmax</strong>, reemplaza 
+        <strong>1fr</strong> en la funcion 
+        <strong>repeat</strong> con un tamaño de columna que tenga
+        un ancho minimo de <strong>90px</strong> y un ancho maximo
+        de 1fr, Y redimensiona la ventana para ver el efecto.
+    </p>
+    <hr>
+    <h2>
+        Ejemplos y vista previa
+    </h2>
+    <h3>
+        Ejemplo 1 vista previa
+    </h3>
+    <p>
+        Tenemos nuestro ejemplo 1 con el codigo que cambiaremos resaltado
+        en azul violeta
+    </p>
+    <div class="example">
+        <p>
+            <strong>.container {</strong><br>
+                font-size: 40px;<br>
+                min-height: 300px;<br>
+                width: 100%;<br>
+                background: lightgray;<br>
+                display: grid;<br>
+               <strong class="blueviolet-text2"> 
+                   grid-template-columns: repeat(3, 1fr);</strong><br>
+                grid-template-rows: 1fr 1fr 1fr;<br>
+                grid-gap: 10px;<br>
+           <strong> }</strong>
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h2>
+        Ejemplo 2
+    </h2>
+    <p>
+        A continuacion podemos ver el codigo que hemos cambiado
+        en color azul violeta:
+    </p>
+    <div class="example">
+        <p>
+            <span><strong>.container-2 {</strong></span>
+              <span> font-size: 40px;</span>
+               <span> min-height: 300px;</span>
+               <span> width: 100%;</span>
+               <span> background: lightgray;</span>
+               <span> display: grid;</span>
+               <span><strong class="blueviolet-text"> grid-template-columns: repeat(3, minmax(90px, 1fr));</strong></span>
+               <span> grid-template-rows: 1fr 1fr 1fr;</span>
+               <span> grid-gap: 10px;</span>
+           <span><strong> }</strong></span>
+           <span> .item1{background:LightSkyBlue;}</span>
+           <span> .item2{background:LightSalmon;}</span>
+           <span> .item3{background:PaleTurquoise;}</span>
+           <span> .item4{background:LightPink;}</span>
+           <span> .item5{background:PaleGreen;}</span>
+        </p>
+    </div>
+    <div class="container-2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+
+
+
+</div>
+</body>
+</html>

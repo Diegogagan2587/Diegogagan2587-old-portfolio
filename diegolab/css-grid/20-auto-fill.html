@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Crea diseños flexibles usando
+        "auto-fill"</title>
+    <link rel="stylesheet" href="20-auto-fill.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Crea diseños flexibles usando
+            "auto-fill"
+        </h1>
+    </header>
+    <p>
+        La funcion <strong>"repeat"</strong> viene con una opcion llamada
+        <strong> "auto-fill". </strong>
+        Esto te permite insertar automaticamente
+        tantas filas o columnas del tamaño que deseado como sea
+        posible deoendiendo de el tamaño de el contenedor.
+        Tu puedes crear diseños flexibles 
+        cuando <strong>combinas</strong>
+       <strong> "auto-fill"</strong> con <strong>
+       "minmax"</strong>, como esto:
+    </p>
+    <div class="example">
+       <strong> repeat(</strong><strong class="blueviolet-text2"> auto-fill</strong>,
+        <strong class="blueviolet-text"> minmax(60px, 1fr)</strong>)
+        <strong>;</strong>
+    </div>
+    <p>
+        Cuando el contenedor cambia de tamaño, esta configuracion
+        se mantiene insertanto columnas de 60px y estirandolas hasta
+        que pueda insertar otra.
+        <strong>Nota:</strong> Si tu contenedor no puede
+        ajustar todos tus elementos en una fila, esto las movera
+        a bajo a una nueva fila.
+    </p>
+    <hr>
+    <p>
+        En la primera cuadricula, usando
+        <strong>auto-fill</strong> con <strong>repeat</strong>
+        para rellenar la cuadricula con columnas que tengan un
+        ancho minimo de <strong>60px</strong> y un maximo
+        de <strong>1fr</strong>. Luego redimension la ventana
+        para ver el auto-fill en accion.
+        
+    </p>
+    <hr>
+    <h2>
+        Vista Previa de ejemplos
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        <strong>Nota:</strong>
+        No mostramos las propiedades que definen
+        los colores de los contenedores debido a que
+        para este ejemplo son irrelevantes <br>
+        A continuacion podemos ver el codigo de la figura 1
+        y el codigo que vamos a comparar con la figura 2 
+        rezaltado en colo azulvioleta:
+    </p>
+    <div class="exmaple">
+        <p>
+            <strong>.container {</strong>
+                font-size: 40px;<br>
+                min-height: 100px;<br>
+                width: 100%;<br>
+                background: silver;<br>
+                display: grid;<br>
+               <strong class="blueviolet-text"> 
+                grid-template-columns: repeat(3,minmax(60px, 1fr));
+               </strong><br>
+                grid-template-rows: 1fr 1fr 1fr;<br>
+                grid-gap: 20px;<br>
+           <strong> }</strong>
+        </p>
+    </div>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
+    <h3>
+        Ejemplo 2
+    </h3>
+    <p>
+        <strong>Nota:</strong>
+        No mostramos las propiedades que definen
+        los colores de los contenedores debido a que
+        para este ejemplo son irrelevantes <br>
+        Podemos observar que efectiva mente tenemos tres filas
+        con una altura de 1fr y tenemos un numero de columnas
+        definidas por la funcion repeat que repite las columnas con
+        el numero de veces que autofill considere,  autofill se rige
+        por la propiedad minmax que le dice a autofill que debe
+        rellenar el expacio con una columna siempre y cuando
+        esta nueva columna mida como minimo 60px y como maximo 1fr
+        <br>
+        A continuacion aplicamos las propiedades vistas en 
+        esta seccion, podemos ver las propiedades de este
+        tema resaltadas en azulvioleta:
+    </p>
+    <div class="example">
+        <p>
+           <strong> .container2 {</strong>
+                font-size: 40px;<br>
+                min-height: 100px;<br>
+                width: 100%;<br>
+                background: lightgray;<br>
+                display: grid;<br>
+               <strong class="blueviolet-text">
+                    grid-template-columns: repeat(autofill, minmax(60px, 1fr));
+                </strong><br>
+                grid-template-rows: 1fr 1fr 1fr;<br>
+                grid-gap: 10px;<br>
+           <strong> }</strong>
+        </p>
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+
+</div>   
+</body>
+</html>
