@@ -1,0 +1,68 @@
+html {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-page-container {
+    background: rgb(242, 242, 242);
+    margin: 0 auto;
+    padding: 2%;
+    min-width: 290px;
+    max-width: 800px;
+    width: 95%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.432);
+}
+.code-container, .example {
+    background-color: white;
+    padding: 3%;
+}
+.blueviolet-text {
+    color: blueviolet;
+}
+.blueviolet-text2 {
+    color: rgb(82, 31, 129);
+}
+.container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "advert header"
+    "advert content"
+    "advert footer";
+}
+.item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+.itemOne {
+    background: PaleGreen;
+  }
+
+.itemTwo {
+    background: BlanchedAlmond;
+  }

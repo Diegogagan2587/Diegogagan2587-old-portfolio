@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: Usa "Media Queries" para crear
+        diseños "responsive"
+    </title>
+    <link rel="stylesheet" href="22-media-queries.css">
+</head>
+
+<body>
+    <div class="main-page-container">
+        <header>
+            <h1>
+                CSS Grid: Usa "Media Queries" para crear
+                diseños "responsive"
+            </h1>
+        </header>
+        <p>
+            CSS Grid puede ser una foma facil de hacer tu sitio mas
+            "responsive"(adaptable) por medio de "media queries" para
+            reorganizar areas de grid(cuadriucla), Cambiar dimenciones de
+            una cuadricula y reacomodar la ubicacion de los elementos.
+            <br><br>
+            En la vista previa, cuando el ancho de la ventana es de
+            300px o mas, el numero de columnas cambia de 1 a 2. El area
+            de los anuncios ocupa entonces la columna izquierda
+            completamente.
+        </p>
+        <hr>
+        <p>
+            Cuando el ancho de ventana es de <strong>400px</strong>
+            o mas,  haz que el adea de el <strong>header</strong>
+            ocupe la fila de la cima completamente y el area del
+            <strong>footer</strong> ocupe la fila de el 
+            fondo completamente.
+        </p>
+        <hr>
+        <h2>
+            Vista previa de ejemplos
+        </h2>
+        <h3>
+            Ejemplo 1
+        </h3>
+        <p>
+            Para este poder lograr este ejemplo tenemos primero que
+            recordar que esta conformado por
+            tres piezas,
+            Tenemos <strong> el contenedor</strong>,
+            los <strong>elementos</strong>
+            y la <strong>media querie</strong> Todos ellos definido 
+            en el codigo de abajo:
+        </p>
+        <div class="example">
+            <p>
+               <strong> .container {</strong>
+                    font-size: 1.5em;<br>
+                    min-height: 300px; <br>
+                    width: 100%; <br>
+                    background: lightgray;<br>
+                    display: grid; <br>
+                    grid-template-columns: 1fr;<br>
+                    grid-template-rows: 50px auto 1fr auto;<br>
+                    grid-gap: 10px;<br>
+                    grid-template-areas: <br>
+                    "header"<br>
+                    "advert"<br>
+                    "content"<br>
+                    "footer";<br>
+               <strong> }</strong> <br>
+               <strong> @media (min-width: 400px) {</strong> <br>
+                   <strong> .container {</strong>
+                        grid-template-areas: <br>
+                        "header header"<br>
+                        "advert content"<br>
+                        "footer footer";<br>
+                   <strong> }</strong><br>
+               <strong> }</strong><br>
+               <strong> .item1 {</strong><br>
+                    background: LightSkyBlue; <br>
+                    grid-area: header;<br>
+               <strong> }</strong> <br>
+               <strong> .item2 {</strong> <br>
+                    background: LightSalmon;<br>
+                    grid-area: advert;<br>
+               <strong> }</strong><br>
+               <strong> .item3 {</strong>
+                    background: PaleTurquoise;<br>
+                    grid-area: content;<br>
+               <strong> }</strong><br>
+               <strong> .item4 {</strong>
+                    background: lightpink;<br>
+                    grid-area: footer;<br>
+               <strong> }</strong> 
+                
+            </p>
+        </div>
+        <div class="container">
+            <div class="item1">header</div>
+            <div class="item2">advert</div>
+            <div class="item3">content</div>
+            <div class="item4">footer</div>
+        </div>
+        <h3>
+            Ejemplo 2
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Debitis odit minus autem aliquam maiores animi, veritatis 
+            vitae? Quidem velit laudantium voluptas possimus fugit
+             suscipit quam repellat unde perferendis placeat. Eaque.
+        </p>
+
+
+
+
+    </div>
+</body>
+
+</html>

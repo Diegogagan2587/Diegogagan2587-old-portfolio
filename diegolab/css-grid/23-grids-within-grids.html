@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Grid: Crear Cuadriculas dentro de Cuadriculas
+    </title>
+    <link rel="stylesheet" href="23-grids-within-grids.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            CSS Grid: Crear Cuadriculas dentro de Cuadriculas
+        </h1>
+    </header>
+    <p>
+        Cambial un elemento en una Cuadricula  (grid) solo afecta
+        el comportamiento de sus decendientes directos. Asi que
+        si cambias un decendiente directo en Grid(cuadricula),
+        tienes una cuadricula dentro de una cuadricula.
+        <br><br>
+        Por ejemplo, Por ajustar las 
+        propiedades <strong>display</strong>
+        y <strong>grid-template-column</strong> de el elemento
+        con la clase <strong>item3</strong>, creas una cuadricula
+        dentro de tu cuadricula.
+    </p>
+    <hr>
+    <p>
+        Cambia el elemento con la clase <strong>item3</strong>
+        en una cuadricula con 2 columnas con ancho de 
+        <strong>auto</strong> y <strong>1fr</strong> usando
+        <strong>display</strong> y 
+        <strong>grid-template-column</strong>.
+    </p>
+    <hr>
+    <h2>
+        Ejemplo
+    </h2>
+    <h3>
+        Ejemplo 1
+    </h3>
+    <p>
+        Podemos ver a continuacion que nuestro ejemplo esta compuesto Por
+        su contenedor y sus elementos.
+        El contenedor tiene sus propiedades que determinan 
+        un contenedor de cuadricula pero ademas uno de sus elementos
+        esta ajustado como cuadricula, podemos ver el codigo
+        a continuacion y las propiedad de cuadricula resaltada
+        en azul violeta:
+    </p>
+    <div class="example">
+        <p>
+           <strong> .container {</strong>
+                font-size: 1.5em; <br>
+                min-height: 300px; <br>
+                width: 100%; <br>
+                background: lightgray; <br>
+               <span class="blueviolet-text">
+                    display: grid; </span><br>
+                grid-template-columns: auto 1fr; <br>
+                grid-template-rows: auto 1fr auto; <br>
+                grid-gap: 10px;<br>
+                grid-template-areas: <br>
+                "advert header"<br>
+                "advert content"<br>
+                "advert footer";<br>
+           <strong> }</strong> <br>
+           <strong> .item1 {</strong> <br>
+                background: LightSkyBlue;<br>
+                grid-area: header;<br>
+             <strong> }</strong> <br>
+            
+             <strong> .item2 {</strong><br>
+                background: LightSalmon;<br>
+                grid-area: advert;<br>
+             <strong> }</strong><br>
+            
+             <strong> .item3 {</strong>
+                background: PaleTurquoise;<br>
+                grid-area: content;<br>
+               <span class="blueviolet-text">
+                    display: grid;</span><br>
+                grid-template-columns: auto 1fr;<br>
+             <strong>}</strong><br>
+            
+             <strong> .item4 {</strong><br>
+                background: lightpink;<br>
+                grid-area: footer;<br>
+             <strong> }</strong><br>
+            
+           <strong> .itemOne {</strong><br>
+                background: PaleGreen;<br>
+             <strong> }</strong> <br>
+            
+           <strong> .itemTwo {</strong> <br>
+                background: BlanchedAlmond;<br>
+             <strong> }</strong>
+        </p>
+    </div>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">advert</div>
+        <div class="item3">
+            <div class="itemOne">Paragraph1</div>
+            <div class="itemTwo">Paragraph2</div>
+        </div>
+        <div class="item4">footer</div>
+    </div>
+
+
+</div>
+</body>
+</html>
