@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(76, 0, 130, 0.205);
+    background-color: rgba(76, 0, 130, 0.203);
     font-family: sans-serif;
 }
 .main-page-container {
@@ -85,9 +85,9 @@ desplegable  */
 }
 /*Here we goint to do the Dropdown menu with
 target*/
-#t1, #t2, #t3 {
+#t1, #t2, #t3, #t4 {
     display: none;
 }
-#t1:target, #t2:target, #t3:target {
+#t1:target, #t2:target, #t3:target, #t4:target {
     display: block;
 }
