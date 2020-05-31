@@ -1,0 +1,86 @@
+html {
+    font-family: 
+    'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
+}
+.example {
+    background-color: rgba(128, 128, 128, 0.445);
+    width: 90%;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.container {
+    background-color: rgba(210, 180, 140, 0.144);
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 30% 1fr ;
+    grid-template-rows: 1fr ;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "nav content";
+}
+.navigation {
+    background-color: whitesmoke;
+    position: fixed;
+    grid-area: nav;
+    width: 29%;
+    height: 98vh;
+    border-right: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.342);
+}
+.navigation header h1 {
+    font-size: 2.8vw;
+    margin: 5px auto 5px 10px;
+    position: static;
+}
+.navigation ul {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.226);
+    list-style: none;
+    padding: 1px 2% 1% 2%;
+    height: 83vh;
+    overflow-y: scroll;
+}
+.navigation ul li {
+    margin:0 auto 10px;
+    padding-top: 10px;
+    padding-left: 5%;
+    border-top: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.377);
+}
+.navigation ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.815);
+    font-size: 1.15em;
+}
+.navigation ul li a:hover {
+    color: black;
+    font-size: 1.18em;
+}
+
+.content {
+    margin: 2vh 2vw 2vh 0;
+    padding: 2%;
+    background-color: white;
+    grid-area: content;
+}
+.content > h2, p {
+    margin: 5px auto 10px 15px;
+}
+/*en el texto de abajo esta el codigo
+para ver como hace para que una 
+secion tenga desplazamiento independiente de toda la
+pagina*/
+/*.content2 {
+    margin: 2vh 2vh 2vh 1px;
+    background-color: rgba(46, 139, 86, 0.041);
+    grid-area: content2;
+    overflow-y: scroll;
+    height: 100vh;
+
+}*/
