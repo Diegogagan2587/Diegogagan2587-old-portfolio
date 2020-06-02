@@ -42,6 +42,14 @@ html {
     text-align: center;
     color: white;
 }
+.nav-container ul li a:hover {
+    background-color: rgba(245, 245, 245, 0.062);
+    font-size: 110%;
+    border-width: 2px;
+    color: rgb(100, 167, 255);
+    font-weight: 120%;
+    
+}
 /*End nav bar*/
 /*Start Welcome Section*/
 header .welcome-section {
@@ -96,6 +104,10 @@ header .welcome-section .aboutme {
     background-color: rgba(0, 0, 0, 0.425);
     margin: 0 auto auto 10px;
     grid-area: p1;
+    text-align: center;
+}
+.project1 img {
+    width: 100%;
 }
 .project2 {
     width: 100%;
@@ -103,6 +115,10 @@ header .welcome-section .aboutme {
     background-color: rgba(0, 0, 0, 0.377);
     margin: 0 auto auto 10px;
     grid-area: p2;
+    text-align: center;
+}
+.project2 img {
+    width: 100%;
 }
 .project3 {
     width: 100%;
@@ -110,6 +126,10 @@ header .welcome-section .aboutme {
     background-color: rgba(0, 0, 0, 0.466);
     margin: 0 auto auto 10px;
     grid-area: p3;
+    text-align: center;
+}
+.project3 img {
+    width: 100%;
 }
 .project4 {
     width: 100%;
@@ -117,6 +137,10 @@ header .welcome-section .aboutme {
     background-color: rgba(0, 0, 0, 0.493);
     margin: 0 auto auto 10px;
     grid-area: p4;
+    text-align: center;
+}
+.project4 img {
+    width: 100%;
 }
 .project5 {
     width: 100%;
@@ -124,6 +148,7 @@ header .welcome-section .aboutme {
     background-color: rgba(0, 0, 0, 0.397);
     margin: 0 auto auto 10px;
     grid-area: p5;
+    text-align: center;
 }
 .project6 {
     width: 100%;
@@ -131,6 +156,7 @@ header .welcome-section .aboutme {
     background-color: rgba(0, 0, 0, 0.466);
     margin: 0 auto auto 10px;
     grid-area: p6;
+    text-align: center;
 }
 /*Show all button*/
 .btn { 
@@ -166,19 +192,26 @@ header .welcome-section .aboutme {
     margin-top: 2px;
 }
 .ftr-container .social-media {
-    background-color: rgba(128, 128, 128, 0.253);
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     font-size: 2.2vw;
     margin: 15px auto;
+    height: 2em;
 }
 .ftr-container .social-media div {
     margin: 0 auto;
     padding: 2px 1vw 2px 1vw;
-
+    background-color: rgb(12, 12, 12);
 }
-.ftr-container .social-media div:hover {
-    background-color: rgba(202, 202, 202, 0.473);
+.ftr-container .social-media a:hover {
+    background-color: rgba(245, 245, 245, 0.062);
+    font-size: 110%;
+    border-width: 2px;
+    color: rgb(100, 167, 255);
+    font-weight: 120%;
+    padding: 0;
+    margin: auto;
 }
 
 hr {
@@ -188,5 +221,6 @@ hr {
     width: 100%;
     border-width: 1px;
 }
+
 
 
