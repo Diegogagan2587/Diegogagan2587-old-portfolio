@@ -8,7 +8,7 @@ html {
 
 /*Start nav bar*/
 .nav-container {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.95);
     position: fixed;
     top: 9px;
     width: 100%;
@@ -69,17 +69,19 @@ header .welcome-section .aboutme {
 /*End Welcome and about section*/
 /*Start Projects*/
 .projects {
+    background-color: rgba(192, 192, 192, 0.575)5);
     position: relative;
     top: 800px;
     display: grid;
-    grid-template-columns: 1r 1fr 1fr;
-    grid-auto-rows: auto 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto 1fr 1fr 50px 1fr;
     grid-gap: 10px;
     grid-template-areas: 
     ". title ."
     "p1 p2 p3"
     "p4 p5 p6"
-    "p7 p8 p9";
+    ". btn ."
+    "ftr ftr ftr";
 }
 .projects-title {
     margin: 0 auto;
@@ -88,45 +90,103 @@ header .welcome-section .aboutme {
     grid-area: title;
 }
 .project1 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
     margin: 0 auto auto 10px;
     grid-area: p1;
 }
 .project2 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
     margin: 0 auto auto 10px;
     grid-area: p2;
 }
 .project3 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
     margin: 0 auto auto 10px;
     grid-area: p3;
 }
 .project4 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
     margin: 0 auto auto 10px;
     grid-area: p4;
 }
 .project5 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
     margin: 0 auto auto 10px;
     grid-area: p5;
 }
 .project6 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
     margin: 0 auto auto 10px;
     grid-area: p6;
 }
+/*Show all button*/
+.btn { 
+    grid-area: btn;
+    display: flex;
+    
+    justify-content: center;
+}
+.btn button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.192);
+    height: 50px;
+    width: 100px;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: white;
+    font-size: 20px;
+}
+/*Footer area*/
+.ftr-container {
+    background-color: black;
+    color: white;
+    grid-area: ftr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ftr-container h2 {
+    font-size: 4em;
+    margin-bottom: 2px;
+}
+.ftr-container p {
+    margin-top: 2px;
+}
+.ftr-container .social-media {
+    background-color: rgba(128, 128, 128, 0.253);
+    display: flex;
+    flex-direction: row;
+    font-size: 2.2vw;
+    margin: 15px auto;
+}
+.ftr-container .social-media div {
+    margin: 0 auto;
+    padding: 2px 1vw 2px 1vw;
+
+}
+.ftr-container .social-media div:hover {
+    background-color: rgba(202, 202, 202, 0.473);
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.603);
+    background-color: rgba(245, 245, 245, 0.39);
+    height: 4px;
+    width: 100%;
+    border-width: 1px;
+}
+
 
