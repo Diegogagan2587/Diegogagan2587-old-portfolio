@@ -82,8 +82,8 @@ header .welcome-section .aboutme {
     top: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto 1fr 1fr 50px 1fr;
-    grid-gap: 10px;
+    grid-auto-rows: auto auto auto 50px 1fr;
+    grid-gap: 20px;
     grid-template-areas: 
     ". title ."
     "p1 p2 p3"
