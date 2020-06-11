@@ -1,0 +1,273 @@
+.html-properties {
+      background-color: hsla(205, 24%, 80%, 0.219);
+      background-color: rgb(76, 0, 130, 0.205);
+}
+.main-page-container {
+  background-color: lavender;
+  background-color: rgb(238, 235, 235);
+  max-width: 800px;
+  width: 95%;
+  padding: 2%;
+  margin: 0 auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  color: rgb(48, 42, 22);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.45rem 8% 0 8%;
+}
+
+.main-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(48, 49, 51, 0.664);
+  color: rgb(212, 218, 240);
+  position: fixed;
+  bottom: 90%;
+  top: 5px;
+  inline-size: 99%;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 100%;
+}
+
+ul.main-list-nav li {
+  display: inline;
+  height: 3px;
+  
+}
+
+.contact-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      background-color: rgba(48, 49, 51, 0.664);
+      color: rgb(212, 218, 240);
+      position: fixed;
+      top: 92%;
+      bottom: 5px;
+      inline-size: 99%;
+      padding-top: 2px;
+      padding-left: 2px;
+      font-size: 100%;
+}
+
+ul.datos-contacto li {
+  display: inline;
+ 
+}
+
+@media (min-height: 2240px ) {
+  .gray-bar {
+    font-size: 235%;
+  }
+  .main-nav-bar {
+    font-size: 235%;
+    bottom: 96%;
+    top: -1%;
+  }
+}
+
+.title-color {
+      color: rgb(30, 53, 44);
+      background-color: rgba(29, 54, 77, 0.233);
+      font-size: 35px;  
+      font-family: monospace;
+      text-align: center;
+      padding: 25px;
+      margin: 25px;
+}
+.title-border {
+      border-color: rgba(110, 108, 67, 0.788);
+      border-style: solid;
+      border-width: 10px;
+}
+
+.sub-title {
+      color: slateblue;
+      font-size: 23px;
+      font-family: monospace;
+}
+
+.paragraph {
+      color: rgb(16, 21, 39);
+      font-size: 20px;
+}
+
+.medium-image {
+      width: 300px;
+      border-color: slategray;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 1%;
+   
+}
+
+.background-color {
+      background-color: slategrey;
+}
+#lista-numerada:hover {
+      background-color: beige;
+      transform: scale(1.1);
+
+}
+
+.orange {
+      background-color: #755f4977;
+      padding: 5px;
+      margin-top: 100px;
+    }
+  
+.cyan {
+      background-color: #4a797967;
+      padding: 5px;
+    }
+  
+.raspberry {
+      background-color: #7a57696b;
+      padding: 5px;
+    }
+      #cuadro-colores {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+   
+  }
+  #cuadro-colores:hover {
+      transform: scale(1.1);
+  }
+#foto-diego:hover {
+  transform: scale(1.1)
+}
+.heart {
+      position: fixed;
+      margin: auto;
+      top: 150px;
+      right: 0;
+      bottom: 0;
+      bottom: 78%;
+      left: 1100px;
+      left:85%;
+      background-color: pink;
+      height: 50px;
+      width: 50px;
+      transform: rotate(-45deg);
+    }
+    .heart::after {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+    .heart::before {
+      content: "";
+      background-color: pink;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+    .heart:hover {
+          transform: scale(1.2);
+    }
+    
+    #rect {
+      height: 40px;
+      width: 70%;
+      background: black;
+      margin: 50px auto;
+      border-radius: 5px;
+    }
+  
+    #rect:hover {
+  animation-name: rainbow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+    }
+  
+  @keyframes rainbow {
+  0%{background-color: blue;
+      top: 0px;}
+  50% {background-color: green;
+      top: 50px;
+}
+  100% {background-color: yellow;
+      top: 0px;
+}
+  }
+
+  #ball {
+      width: 70px;
+      height: 70px;
+      margin: 50px auto;
+      position: relative;
+      left: 20%;
+      border-radius: 50%;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+    }
+    #ball:hover {
+      animation-name: fade;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+  
+    @keyframes fade {
+      50% {
+        left: 60%;
+        opacity: 0.1;
+  
+      }
+    }
+    #ball2 {
+      width: 100px;
+      height: 100px;
+      margin: auto 50px;
+      position: static;
+      border-radius: 50%;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      top: 150%;
+    }
+  
+    @keyframes bounce{
+      0% {
+        top: 0px;
+      }
+      50% {
+        top: 249px;
+        width: 130px;
+        height: 70px;
+      }
+      100% {
+        top: 0px;
+      }
+    }
+  
