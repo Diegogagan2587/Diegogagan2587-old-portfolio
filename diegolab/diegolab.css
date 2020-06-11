@@ -1,14 +1,63 @@
 html {
-    background-color: rgba(76, 0, 130, 0.203);
+    background-color: white;
+    color: black;
     font-family: sans-serif;
 }
+/*Start nav bar*/
+.nav-container {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 9px;
+    width: 100%;
+    margin: -8px -8px auto -8px;
+    display: flex;
+    justify-content: flex-end;
+    height: 55px;
+    z-index: 1;
+}
+.nav-container ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+}
+.nav-container ul li {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.322);
+    height: 20px;
+    width: 17vw;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.nav-container ul > li, a {
+    margin: 0 1px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.nav-container ul li a:hover {
+    background-color: rgba(245, 245, 245, 0.062);
+    font-size: 110%;
+    border-width: 2px;
+    color: rgb(100, 167, 255);
+    font-weight: 120%;
+    
+}
+/*End nav bar*/
+/*Start main container*/
 .main-page-container {
-    background-color: lavender;
+    background-color: gray;
     max-width: 800px;
     width: 95%;
     padding: 2%;
     margin: 0 auto;
 }
+/*End main container*/
+/*start Learn  how to learn*/
 .learn-main-container {
     display: flex;
     flex-direction: column;
@@ -18,12 +67,19 @@ html {
 .learn-main-container h2 {
     text-align: center;
 }
+.learn-main-container h2, h3, h1 {
+    color: black;
+}
 .lrn-wks-container {
     display: flex;
     flex-direction: row;
     background-color: lightsalmon;
+    color: black;
 }
-
+.font-color-black {
+    color: black;
+}
+/*Ends Learn how to learn */
 
 /*Aqui trabajaremos la navegacion por los temas*/
 .menu-container ul {
