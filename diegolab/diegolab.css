@@ -29,7 +29,7 @@ html {
     padding-top: 1px;
     padding-bottom: 1px;
 }
-.nav-container ul > li, a {
+.nav-container ul li, a {
     margin: 0 1px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -38,6 +38,9 @@ html {
     justify-content: center;
     text-align: center;
     color: white;
+}
+a {
+    color: inherit;
 }
 .nav-container ul li a:hover {
     background-color: rgba(245, 245, 245, 0.062);
@@ -61,7 +64,7 @@ html {
 .learn-main-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 135, 57);
+    background-color: rgb(180, 171, 161); 
     min-height: 300px;
 }
 .learn-main-container h2 {
@@ -79,6 +82,7 @@ html {
 .font-color-black {
     color: black;
 }
+
 /*Ends Learn how to learn */
 
 /*Aqui trabajaremos la navegacion por los temas*/
@@ -145,5 +149,11 @@ target*/
     display: none;
 }
 #t1:target, #t2:target, #t3:target, #t4:target {
+    display: block;
+}
+#week1, #week2, #week3, #week4 {
+    display: none;
+}
+#week1:target, #week2:target, #week3:target, #week4:target {
     display: block;
 }
