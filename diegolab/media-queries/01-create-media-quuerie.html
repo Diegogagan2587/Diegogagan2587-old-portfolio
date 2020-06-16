@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una "Media Query</title>
+    <link rel="stylesheet" href="01-create-media-quuerie.css">
+</head>
+<body>
+<div class="main-page-container">
+    <header>
+        <h1>
+            Crear una media Querie
+        </h1>
+    </header>
+    <p>
+        Media Queries son una nueva tecnica introducida en CSS3 que
+        cambia la presentacion de el contenido basado en diferentes 
+        tamaños de ventana. La Ventana (viewport) es el area visible
+        del usuario en una pagina web, y es diferente dependiendo 
+        de el dispositivo usado para acceder a el sitio. <br>
+        <br>
+        Media Queries consisten en un tipo de medio, y si este tipo 
+        de medio coincide con el tipo de dispositivo en donde el 
+        documento es visualizado, los estilos son aplicados. Tu
+        puedes tener tantos selectores y estilos dentro de tu
+        Media Query como tu quieras. <br>
+        <br>
+        Aqui hay un ejemplo de una Mequia Query que retorna el 
+        contenido cuando el ancho del dispositivo es menos o 
+        igual a 100px:
+        <br><br><br>
+        <span class="example">
+            @media (max-width: 100px) { /*Regla CSS*/ }
+        </span>
+        <br><br><br>
+        Y el siguiente Media Querie Regresa el contenido cuando
+        la altura del dispositivo es mayor o igual que 350px:
+        <br><br><br>
+        <span class="example">
+            @media (min-height: 350px) { /*Reglas CSS */ } 
+        </span>
+        <br><br><br>
+        Recuerda, Las reglas CSS dentro de el media query es 
+        aplicado solo si el tipo de medio coincide con el
+        dispositibo que esta siendo usado.
+    </p>
+    <hr>
+    <p>
+        Agrega una media querie, de forma que la etiqueta 
+        <strong>p</strong> tenga un <strong>font-size</strong>
+        de 10 px cuando la altura de el dispositivo
+        es menos o igual que 800px.
+    </p>
+    <hr>
+    <p class="p-tag">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Minus necessitatibus veniam eos tempore non consequatur
+          consequuntur perferendis, quidem laboriosam. Minima 
+          labore alias ea exercitationem itaque dicta consectetur 
+          facere veritatis facilis!
+    </p>
+</div>
+</body>
+</html>

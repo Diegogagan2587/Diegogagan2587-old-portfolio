@@ -145,10 +145,12 @@ desplegable  */
 }
 /*Here we goint to do the Dropdown menu with
 target*/
-#t1, #t2, #t3, #t4 {
+#t1, #t2, #t3, #t4, #t6, #t7, #t8, #t9 {
     display: none;
 }
-#t1:target, #t2:target, #t3:target, #t4:target {
+#t1:target, #t2:target, #t3:target, #t4:target
+#t5:target, #t6:target, #t7:target, #t8:target, 
+#t8:target {
     display: block;
 }
 #week1, #week2, #week3, #week4 {
