@@ -96,6 +96,13 @@ header .welcome-section .aboutme {
     margin-left: 3%;
     font-size: 2vw;
 }
+@media ( max-width: 400px) {
+    header .welcome-section .aboutme {
+        position: relative;
+        top: 160px;
+        font-size: 70%;
+    }
+}
 /*End Welcome and about section*/
 /*Start Projects*/
 .projects {
