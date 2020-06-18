@@ -120,11 +120,28 @@ header .welcome-section .aboutme {
     ". btn ."
     "ftr ftr ftr";
 }
+@media ( max-width:400px ) {
+    .projects {
+        top: 350px;
+        display: flex;
+        flex-direction: column;
+        margin: auto 2px;
+        width: 94%;
+    }
+}
 .projects-title {
     margin: 0 auto;
     width: 100%;
     display: inline;
     grid-area: title;
+}
+@media ( max-width:400px ) {
+    .projects-title {
+        width: 100%;
+    }
+    .projects-title h2 {
+        text-align: center;
+    }
 }
 .project1 {
     width: 100%;
@@ -187,11 +204,16 @@ header .welcome-section .aboutme {
     grid-area: p6;
     text-align: center;
 }
+@media ( max-width:400px ) {
+    .project1, .project2, .project3,
+    .project4, .project5,.project6 {
+        margin-bottom: 10px;
+    }
+}
 /*Show all button*/
 .btn { 
     grid-area: btn;
     display: flex;
-    
     justify-content: center;
 }
 .btn button {
@@ -221,7 +243,7 @@ header .welcome-section .aboutme {
     margin-top: 2px;
 }
 .ftr-container .social-media {
-    background-color: whitesmoke;
+    background-color: rgba(12, 12, 12,);
     display: flex;
     flex-direction: row;
     font-size: 2.2vw;
@@ -253,6 +275,31 @@ hr {
 #cellphone {
     font-size: 0.7em;
 }
-
+@media ( max-width:400px ) {
+    .ftr-container {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 400px;
+        height: 100%;
+        width: 100vw;
+        margin: 0px;
+        padding: 0;
+    }
+    .ftr-container h2 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .ftr-container .social-media {
+        width: 90%;
+        background-color: rgb(12, 12, 12);
+        font-size: 14px;
+        height: auto;
+        margin: 0 auto;
+        margin-left: 2%;
+    }
+ 
+}
 
 
