@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia Responsive</title>
+    <link rel="stylesheet" href="04-responsive-tipografhy.css">
+</head>
+
+<body>
+    <div class="main-page-container">
+        <header>
+            <h1>
+                Haz una Tipografia Adaptable o Responsive
+            </h1>
+        </header>
+        <p>
+            En lugar de usar <strong>em</strong> o <strong>px</strong>
+            para dimensionar texto, puedes usar unidades Viewport 
+            (de ventana) para una tipografia adaptable. Unidades de
+             ventana o viewport como el porcentaje , son unidades relativas
+             pero estan basadas en elementos diferentes.
+             Las unidades Viewport (de ventana) son relativas a las
+             dimensiones de ventana (ancho o alto) de un dispositivo
+              y los porcentajes son relativos a el tamaño de el 
+              contenedor padre de el elemento.
+              <br>
+              <br>
+              Las cuatro unidades diferentes de ventana (viewport) son:
+              <ul>
+                  <li>
+                      <strong>vw</strong> (Viewport Width - Ancho de ventana)
+                      <strong>10vw</strong> Seria el 10% de el ancho 
+                      de la ventana .
+                  </li>
+                  <li>
+                      <strong>vh</strong> (viewport height - Alto de Ventana): 
+                      <strong>3vh</strong> Serian el 3% de la altura de la 
+                      ventana.
+                  </li>
+                  <li>
+                      <strong>vmin</strong> (Viewport minimum): 
+                      <strong>70vmin</strong> seria el 70% de la dimension mas pequeña
+                      de la vista en ventana (Altura o anchura)
+                  </li>
+                  <li>
+                      <strong>vmax</strong> (viewport maximum): 
+                      <strong>100vmax</strong> Seria el 100% de la
+                      dimension mas grande de la ventana (alto o ancho).
+                  </li>
+              </ul>
+              <br>
+              Aqui hay un ejemplo que ajusta la etiqueta body al 30%
+              de el ancho de ventana.
+        </p>
+        <p>
+            <span class="example">
+                body { width: 30vw; }
+              </span>
+        </p>
+        <hr>
+        <p>
+            Ajusta el <strong>width</strong>(ancho) de la etiqueta
+            <strong>h2</strong> a el 80% de el ancho de la vista 
+            de ventana y el <strong> width</strong> de el
+            parrafo en 75% de la vista de venana mas pequeña
+        </p>
+        <hr>
+    </div>
+</body>
+
+</html>

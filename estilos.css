@@ -18,17 +18,39 @@ html {
     height: 55px;
     z-index: 1;
 }
+@media (max-width: 400px) {
+    .nav-container {
+        min-height: 65px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
 .nav-container ul {
     display: flex;
     flex-direction: row;
     margin: 0 5px;
+    width: 100%;
+}
+@media (max-width:400px) {
+    .nav-container ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 4px;
+        padding: 0;
+    }
 }
 .nav-container ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.322);
+    border-color: black;
     height: 20px;
-    width: 17vw;
+    width: 20%;
     padding-top: 1px;
     padding-bottom: 1px;
 }

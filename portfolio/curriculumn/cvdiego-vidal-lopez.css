@@ -79,5 +79,7 @@ html {
     flex-direction: column;
     margin: 0 auto auto 3%;
 }
-
+a {
+    color: inherit;
+}
 
