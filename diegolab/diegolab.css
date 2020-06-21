@@ -68,7 +68,7 @@ a {
     min-height: 300px;
 }
 .learn-main-container h2 {
-    text-align: center;
+   text-align: center;
 }
 .learn-main-container h2, h3, h1 {
     color: black;
@@ -86,6 +86,13 @@ a {
 /*Ends Learn how to learn */
 
 /*Aqui trabajaremos la navegacion por los temas*/
+#responsive-web-desing > a h3 {
+    text-align: left;
+    margin-left: 20px;
+}
+.menu-container h3 {
+    text-align: left;
+}
 .menu-container ul {
     list-style: none;
     margin: 0;
@@ -104,6 +111,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+
 }
 .menu-container ul li {
     position: relative;
@@ -145,10 +153,10 @@ desplegable  */
 }
 /*Here we goint to do the Dropdown menu with
 target*/
-#t1, #t2, #t3, #t4, #t6, #t7, #t8, #t9 {
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8, #t9 {
     display: none;
 }
-#t1:target, #t2:target, #t3:target, #t4:target
+#t1:target, #t2:target, #t3:target, #t4:target,
 #t5:target, #t6:target, #t7:target, #t8:target, 
 #t8:target {
     display: block;
