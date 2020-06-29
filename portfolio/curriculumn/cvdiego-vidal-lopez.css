@@ -18,7 +18,7 @@ html {
     height: 55px;
     z-index: 1;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .nav-container {
         min-height: 65px;
         height: auto;
@@ -34,7 +34,7 @@ html {
     margin: 0 5px;
     width: 100%;
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
     .nav-container ul {
         display: flex;
         flex-direction: row;
@@ -100,7 +100,7 @@ header .welcome-section .aboutme #objetivo {
     max-width: 70%;
     width: 100%;
 }
-@media ( max-width: 400px) {
+@media ( max-width: 600px) {
     header .welcome-section .aboutme {
         position: relative;
         top: 160px;
@@ -108,11 +108,12 @@ header .welcome-section .aboutme #objetivo {
     }
 }
 /*End Welcome and about section*/
+
 /*Start Projects*/
 .projects {
     background-color: rgba(192, 192, 192, 0.575)5);
     position: relative;
-    top: 800px;
+    top: 52vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto auto auto 50px 1fr;
@@ -124,7 +125,7 @@ header .welcome-section .aboutme #objetivo {
     ". btn ."
     "ftr ftr ftr";
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .projects {
         top: 350px;
         display: flex;
@@ -139,7 +140,7 @@ header .welcome-section .aboutme #objetivo {
     display: inline;
     grid-area: title;
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .projects-title {
         width: 100%;
     }
@@ -208,7 +209,7 @@ header .welcome-section .aboutme #objetivo {
     grid-area: p6;
     text-align: center;
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .project1, .project2, .project3,
     .project4, .project5,.project6 {
         margin-bottom: 10px;
@@ -279,7 +280,7 @@ hr {
 #cellphone {
     font-size: 0.7em;
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .ftr-container {
         background-color: black;
         color: white;
