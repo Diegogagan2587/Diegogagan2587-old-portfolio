@@ -88,12 +88,17 @@ header img {
 header .welcome-section .aboutme {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
     line-height: 5px;
     position: relative;
     top: 3vw;
     margin-left: 3%;
     font-size: 2vw;
+}
+header .welcome-section .aboutme #objetivo {
+    line-height: initial;
+    max-width: 70%;
+    width: 100%;
 }
 @media ( max-width: 400px) {
     header .welcome-section .aboutme {
