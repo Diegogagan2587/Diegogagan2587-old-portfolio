@@ -228,6 +228,9 @@ header .welcome-section .aboutme #objetivo {
     grid-area: p5;
     text-align: center;
 }
+.project5 img {
+    width: 80%;
+}
 .project6 {
     width: 100%;
     height: 100%;
@@ -235,6 +238,9 @@ header .welcome-section .aboutme #objetivo {
     margin: 0 auto auto 10px;
     grid-area: p6;
     text-align: center;
+}
+.project6 img {
+    width: 80%;
 }
 @media ( max-width:600px ) {
     .project1, .project2, .project3,
