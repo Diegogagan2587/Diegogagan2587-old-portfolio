@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Rock, Paper Scisor Game</title>
+</head>
+<body>
+    <h1>
+        <p>Rock, Paper Scissor Game</p>
+
+    </h1>
+    
+    <!-- Test Your java Here down -->
+    <button onclick="myFunctionB()">Apreta</button>
+    <p id="demo">Demo</p>
+
+    <script>
+        let fruits = ["Mango"];
+        for (let index = 0; index < 5; index++) {
+             fruits[index] = prompt("Fruta?", "Mango"); 
+        }
+        let text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+
+        function myFunction(value) {
+             text += "<li>" + value + "</li>";
+        }
+        function myFunctionB() {
+            fruits.push( prompt("Fruta?", "Mango") )
+            let index = fruits.length -1;
+            myFunction(fruits[index])
+            document.getElementById("demo").innerHTML = text;
+
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+
+
+    <!-- Test Your java Here up-->
+
+
+</body>
+</html>
