@@ -1,6 +1,7 @@
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper'); 
 const scissor = document.getElementById('scissors');
+const result = document.getElementById('results');
 rock.addEventListener('click',getWinner);
 paper.addEventListener('click',getWinner);
 scissor.addEventListener('click',getWinner);
@@ -35,7 +36,7 @@ function getComputerPlay() { //This functions gets a ramdom numeric value betwee
         return "Scissors";
     }
 }
-
+const arrOfResults = [];
 function getWinner(e) { //This functions make an evaluation to the user input and the PC input
     console.log('runing getWinner()')
     let userPlayer = e['target']['defaultValue'];
@@ -59,38 +60,46 @@ function getWinner(e) { //This functions make an evaluation to the user input an
     result = loser;
 };
 console.log('getWinner will return =', result);
+arrOfResults.push(result);
+showGame(arrOfResults)
 return result;
 }
+function game(arr) {
+    console.log('runing fuction game()');
+    let result;
 
-
-
-function game() {
-    console.log('runing fuction garme()');
-    //Introducimos los datos de cada ronda
-    let rond1 = getWinner();
-    console.log("Ronda 1 " + rond1 );
-    let rond2 = getWinner();
-    console.log("Ronda 2 " + rond2 );
-    let rond3 = getWinner();
-    console.log("Ronda 3 " + rond3 );
-    let rond4 = getWinner();
-    console.log("Ronda 4 " + rond4 );
-    let rond5 = getWinner();
-    console.log("Ronda 5 " + rond5 );
-    //Determina los puntos por partida del usuario
-    let userScore1 = !(rond1.indexOf("Tu ganas")) ? 1 : 0 ;
-    let userScore2 = !(rond2.indexOf("Tu ganas")) ? 1 : 0 ;
-    let userScore3 = !(rond3.indexOf("Tu ganas")) ? 1 : 0 ;
-    let userScore4 = !(rond4.indexOf("Tu ganas")) ? 1 : 0 ;
-    let userScore5 = !(rond5.indexOf("Tu ganas")) ? 1 : 0 ;
-    //suma los puntos 
-    let totalScore = userScore1 + userScore2 + userScore3 + userScore4 + userScore5;
+    let totalScore = 0;
+    for(let i =0; i<arr.length; i++){
+        if(arr[i].indexOf('Tu ganas')){
+            totalScore = totalScore+1;
+        }
+    }
     //determina los puntos del usuario, si gana y envia mensaje al ganador en consola
     if (totalScore >= 3) {
-        console.log ("Felicidades, tu ganas la partida con " + totalScore + " puntos!");
+        result = "Felicidades, tu ganas la partida con " + totalScore + " puntos!" ;
     } else {
-        console.log( "has perdido con tan solo " + totalScore + " puntos, ¡intentalo de nuevo!" ) ;
+        result = "has perdido con tan solo " + totalScore + " puntos, ¡intentalo de nuevo!" ;
     }
+
+    return result;
 }
+function showGame(arr){
+    if(arr.length < 5){return};//stop id lees than 5 games;
+    //append elements into result div;
+    for(let i =0; i<arr.length; i++){
+        let divToAdd = document.createElement('div');
+        let textDiv = document.createTextNode(`${arrOfResults[i]}`);
+        divToAdd.appendChild(textDiv);
+        result.appendChild(divToAdd);
+    }
+    //finaley we append the final result;
+    let divFinalResult = document.createElement('div');
+    let finalResultText = document.createTextNode(`${game(arrOfResults)}`);
+    divFinalResult.appendChild(finalResultText);
+    result.appendChild(divFinalResult);
+
+
+}
+
 
 //game();
