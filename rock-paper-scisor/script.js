@@ -61,7 +61,7 @@ function getWinner(e) { //This functions make an evaluation to the user input an
 };
 console.log('getWinner will return =', result);
 arrOfResults.push(result);
-showGame(arrOfResults)
+showGame(arrOfResults,result);
 return result;
 }
 function game(arr) {
@@ -83,22 +83,20 @@ function game(arr) {
 
     return result;
 }
-function showGame(arr){
-    if(arr.length < 5){return};//stop id lees than 5 games;
+function showGame(arr,getWinnerResult){
     //append elements into result div;
-    for(let i =0; i<arr.length; i++){
         let divToAdd = document.createElement('div');
-        let textDiv = document.createTextNode(`${arrOfResults[i]}`);
+        let textDiv = document.createTextNode(getWinnerResult);
         divToAdd.appendChild(textDiv);
         result.appendChild(divToAdd);
-    }
     //finaley we append the final result;
+    
+    if(arr.length < 5){return};//stop id lees than 5 games;//
     let divFinalResult = document.createElement('div');
     let finalResultText = document.createTextNode(`${game(arrOfResults)}`);
     divFinalResult.appendChild(finalResultText);
     result.appendChild(divFinalResult);
-
-
+    
 }
 
 
