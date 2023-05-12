@@ -8,7 +8,7 @@ html {
 
 /*Start nav bar*/
 .nav-container {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     top: 9px;
     width: 100%;
@@ -18,7 +18,7 @@ html {
     height: 55px;
     z-index: 1;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .nav-container {
         min-height: 65px;
         height: auto;
@@ -34,7 +34,7 @@ html {
     margin: 0 5px;
     width: 100%;
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
     .nav-container ul {
         display: flex;
         flex-direction: row;
@@ -96,7 +96,7 @@ header .welcome-section .aboutme {
     margin-left: 3%;
     font-size: 2vw;
 }
-@media ( max-width: 400px) {
+@media ( max-width: 600px) {
     header .welcome-section .aboutme {
         position: relative;
         top: 160px;
@@ -120,7 +120,7 @@ header .welcome-section .aboutme {
     ". btn ."
     "ftr ftr ftr";
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .projects {
         top: 350px;
         display: flex;
@@ -135,7 +135,7 @@ header .welcome-section .aboutme {
     display: inline;
     grid-area: title;
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .projects-title {
         width: 100%;
     }
@@ -204,7 +204,7 @@ header .welcome-section .aboutme {
     grid-area: p6;
     text-align: center;
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .project1, .project2, .project3,
     .project4, .project5,.project6 {
         margin-bottom: 10px;
@@ -252,7 +252,7 @@ header .welcome-section .aboutme {
 }
 .ftr-container .social-media div {
     margin: 0 auto;
-    padding: 2px 1vw 2px 1vw;
+    padding: 2% 1% 2px 1%;
     background-color: rgb(12, 12, 12);
 }
 .ftr-container .social-media a:hover {
@@ -275,7 +275,7 @@ hr {
 #cellphone {
     font-size: 0.7em;
 }
-@media ( max-width:400px ) {
+@media ( max-width:600px ) {
     .ftr-container {
         background-color: black;
         color: white;
@@ -294,7 +294,6 @@ hr {
     .ftr-container .social-media {
         width: 90%;
         background-color: rgb(12, 12, 12);
-        font-size: 14px;
         height: auto;
         margin: 0 auto;
         margin-left: 2%;
