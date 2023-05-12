@@ -5,6 +5,10 @@ html {
      background-color: gray;
 }
 
+body {
+    margin: 0;
+}
+
 
 /*Start nav bar*/
 .nav-container {
@@ -75,12 +79,13 @@ html {
 /*End nav bar*/
 /*Start Welcome Section*/
 header .welcome-section {
+    background-image: url(./images/Soy\ Diego.jpg);
+    background-size: cover;
     background-color: black;
-    position: absolute;
-    top: 55px;
-    min-height: 300px;
     width: 100vw;
-    margin-left: -8px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+
 }
 header img {
     width: 100vw;
