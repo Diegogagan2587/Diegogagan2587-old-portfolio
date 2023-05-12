@@ -113,7 +113,7 @@ header .welcome-section .aboutme {
 .projects {
     background-color: rgba(192, 192, 192, 0.575)5);
     position: relative;
-    top: 800px;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto auto auto 50px 1fr;
