@@ -123,11 +123,11 @@ header .welcome-section .aboutme {
 }
 @media ( max-width:600px ) {
     .projects {
-        top: 350px;
         display: flex;
         flex-direction: column;
         margin: auto 2px;
         width: 94%;
+        margin-top: 8%;
     }
 }
 .projects-title {
