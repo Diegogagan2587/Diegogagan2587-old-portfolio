@@ -145,66 +145,53 @@ header .welcome-section .aboutme {
         text-align: center;
     }
 }
-.project1 {
+
+.project-container {
     width: 100%;
     min-height: 200px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.425);
     margin: 0 auto auto 10px;
-    grid-area: p1;
     text-align: center;
 }
+.project1 {
+    grid-area: p1;
+}
+
 .project1 img {
     width: 100%;
 }
+
 .project2 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.377);
-    margin: 0 auto auto 10px;
     grid-area: p2;
-    text-align: center;
 }
+
 .project2 img {
     width: 100%;
 }
+
 .project3 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.466);
-    margin: 0 auto auto 10px;
     grid-area: p3;
-    text-align: center;
 }
+
 .project3 img {
     width: 100%;
 }
+
 .project4 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.493);
-    margin: 0 auto auto 10px;
     grid-area: p4;
-    text-align: center;
 }
+
 .project4 img {
     width: 100%;
 }
+
 .project5 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.397);
-    margin: 0 auto auto 10px;
     grid-area: p5;
-    text-align: center;
 }
+
 .project6 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.466);
-    margin: 0 auto auto 10px;
     grid-area: p6;
-    text-align: center;
 }
 @media ( max-width:600px ) {
     .project1, .project2, .project3,
