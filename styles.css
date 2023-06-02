@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family:
      'Gill Sans', 'Gill Sans MT', Calibri, 
@@ -148,10 +152,10 @@ header .welcome-section .aboutme {
 
 .project-container {
     width: 100%;
-    min-height: 200px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.425);
-    margin: 0 auto auto 10px;
+    border-radius: 5px;
+    padding: 4% 2% 4% 2%;
     text-align: center;
 }
 .project1 {
