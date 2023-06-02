@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* border: 1px solid green; */
 }
 
 html {
@@ -18,11 +19,12 @@ body {
 .nav-container {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
-    top: 9px;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: -8px -8px auto -8px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     height: 55px;
     z-index: 1;
 }
